@@ -62,6 +62,20 @@ person.address().setTown("Los Angeles");
 person.address().setZipCode(12345);
 ```
 
+## Configuring Maven to push to Maven Central
+
+Add this config in $HOME/.m2/settings.xml
+```xml
+    <servers>
+        <server>
+            <id>ossrh</id>
+            <username>YOUR SONATYPE JIRA ACCOUNT</username>
+            <password>YOUR SONATYPE JIRA PASSWORD</password>
+        </server>
+    </servers>
+```
+
+
 ## Releasing to Maven central
 
 mvn release:prepare
@@ -71,4 +85,4 @@ Then to see errors:
 
 https://oss.sonatype.org/
 
-Login with Sonatype JIRA account
+Login with your Sonatype JIRA account
