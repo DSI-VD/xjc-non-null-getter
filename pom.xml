@@ -10,6 +10,7 @@
 
     <name>JAXB2 Plugin - Non null getter</name>
     <description>JAXB2 Plugin that adds non-null getters</description>
+    <url>http://www.sharedvd.ch</url>
 
     <scm>
         <connection>scm:git:git@github.com::/shared-vd/xjc-non-null-getter.git</connection>
