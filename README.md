@@ -64,14 +64,20 @@ person.address().setZipCode(12345);
 
 ## Configuring Maven to push to Maven Central
 
+Create a user Token in oss.sonytype.org
+Go to
+
+User -> Profile -> User token -> Generate
+
+
 Add this config in $HOME/.m2/settings.xml
 ```xml
     <servers>
-        <server>
-            <id>ossrh</id>
-            <username>YOUR SONATYPE JIRA ACCOUNT</username>
-            <password>YOUR SONATYPE JIRA PASSWORD</password>
-        </server>
+      <server>
+        <id>ossrh</id>
+        <username>USER TOKEN</username>
+        <password>PASSWORD TOKEN</password>
+      </server>
     </servers>
 ```
 
