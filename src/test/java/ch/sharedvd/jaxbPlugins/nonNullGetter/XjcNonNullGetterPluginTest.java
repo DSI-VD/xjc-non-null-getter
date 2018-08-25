@@ -1,4 +1,4 @@
-package ch.vd.shared.xjc.plugins.nonnullgetter;
+package ch.sharedvd.jaxbPlugins.nonNullGetter;
 
 import com.sun.tools.xjc.Driver;
 import org.junit.Assert;
@@ -11,12 +11,12 @@ import java.text.MessageFormat;
 public class XjcNonNullGetterPluginTest {
 
     /*
-Extensions:
-  -XNonNullGetter-api        :  non null getter api for generated code
-  -Xlocator          :  enable source location support for generated code
-  -Xsync-methods     :  generate accessor methods with the 'synchronized' keyword
-  -mark-generated    :  mark the generated code as @javax.annotation.Generated
-  -episode <FILE>    :  generate the episode file for separate compilation
+    Extensions:
+      -XNonNullGetter-api        :  non null getter api for generated code
+      -Xlocator          :  enable source location support for generated code
+      -Xsync-methods     :  generate accessor methods with the 'synchronized' keyword
+      -mark-generated    :  mark the generated code as @javax.annotation.Generated
+      -episode <FILE>    :  generate the episode file for separate compilation
      */
 
     @Test
@@ -27,7 +27,7 @@ Extensions:
 
         String basePath = "src/test/resources";
 
-        String[] argsDef = new String[] {
+        String[] argsDef = new String[]{
                 "-httpproxy", "webproxy.vd.ch:8080",
                 "-XNonNullGetter-api",
                 "-catalog", "{0}/schemas/ech-catalog.xml",
@@ -36,7 +36,7 @@ Extensions:
                 "-no-header",
                 "-d", dir,
 
-            "{0}/schemas/eCH-0099/1/eCH-0099-1-1.xsd"
+                "{0}/schemas/eCH-0099/1/eCH-0099-1-1.xsd"
         };
 
         String[] args = new String[argsDef.length];
@@ -71,8 +71,8 @@ Extensions:
 
     private static final FileFilter fileFilter = new FileFilter() {
         public boolean accept(File aPathname) {
-            return (    !".svn".equals(aPathname.getName())
-                     && !"ObjectFactory.java".equals(aPathname.getName()));
+            return (!".svn".equals(aPathname.getName())
+                    && !"ObjectFactory.java".equals(aPathname.getName()));
         }
     };
 
@@ -126,9 +126,9 @@ Extensions:
         File found = null;
         for (int i = 0; (null == found) && (i < aRefFiles.length); ++i) {
             found = aRefFiles[i];
-            if (    !found.getName().equals(aModel.getName())
-                 || (found.isDirectory() != aModel.isDirectory())
-                 || (found.isFile() != aModel.isFile())) {
+            if (!found.getName().equals(aModel.getName())
+                    || (found.isDirectory() != aModel.isDirectory())
+                    || (found.isFile() != aModel.isFile())) {
                 found = null;
             }
         }
