@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<bindings version="2.1"
+               xmlns="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:eCH-0011="http://www.ech.ch/xmlns/eCH-0011/3"
+               xmlns:eCH-0044="http://www.ech.ch/xmlns/eCH-0044/1"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://java.sun.com/xml/ns/jaxb
+                                  http://java.sun.com/xml/ns/jaxb/bindingschema_2_0.xsd">
+
+    <globalBindings
+            typesafeEnumMemberName="generateName"
+            generateIsSetMethod="true" />
+
+    <bindings scd="/type::eCH-0044:sexType">
+      <typesafeEnumClass>
+        <typesafeEnumMember name="E1_masculin" value="1" />
+        <typesafeEnumMember name="E2_feminin" value="2" />
+      </typesafeEnumClass>
+    </bindings>
+
+    <bindings scd="/type::eCH-0011:maritalDataType/model::sequence/element::eCH-0011:cancelationReason/type::0">
+      <typesafeEnumClass name="CancellationReason">
+        <typesafeEnumMember name="E1_dissous_judiciairement" value="1" />
+        <typesafeEnumMember name="E2_annulation" value="2" />
+        <typesafeEnumMember name="E3_disparition" value="3" />
+        <typesafeEnumMember name="E4_deces" value="4" />
+        <typesafeEnumMember name="E9_inconnu_autre" value="9" />
+      </typesafeEnumClass>
+    </bindings>
+
+</bindings>

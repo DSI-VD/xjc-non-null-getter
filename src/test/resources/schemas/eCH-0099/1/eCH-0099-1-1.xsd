@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Schema für Validierung und Lieferung an die Statistik (Draft).
+  
+  2007-08-29 Bereinigte Fassung nach Walktrough mit Estelle Crippa. (Igor Metz, Glue AG).
+  2007-08-28 Erste Version nach Input von Estelle Crippa. (Igor Metz, Glue AG).
+  2007-09-04 Korrekturen von Estelle Crippa eingearbeitet. (Igor Metz, Glue AG).
+             - Korrektur des Kommentars zu householdId
+             - Im Typ destinationType das Element mailAdress wieder aufgenommen. 
+  2007-09-06 In dwellingAddressType/appartment sind (EWID,householdID) neu 
+             optional. (Igor Metz, Glue AG).
+  2007-09-07 Fehlerkorrektur: version Attribut des Elementes delivery. (Igor Metz, Glue AG).
+  2007-10-01 Typ von //coredata/religion geändert. (Igor Metz, Glue AG).
+  2007-10-26 An Stelle eines eigenen Typen für /delivery/reportedPerson wird der 
+             entsprechende Typ aus dem modifizierten Schema eCH-0011/3 
+             verwendet. Das Element /develivery ist in der neuen Version 1.1
+             struktuell äquivalent zu der Version 1.0, referenziert aber 
+             andere Namespaces. (Igor Metz, Glue AG)
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  xmlns:eCH-0011="http://www.ech.ch/xmlns/eCH-0011/3" 
+  xmlns:eCH-0044="http://www.ech.ch/xmlns/eCH-0044/1" 
+  xmlns:eCH-0099="http://www.ech.ch/xmlns/eCH-0099/1" 
+  targetNamespace="http://www.ech.ch/xmlns/eCH-0099/1" 
+  elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0">
+  
+  <xs:annotation>
+    <xs:documentation xml:lang="de">
+      Schema für die Use Cases Validierung und Lieferung an die Statistik. Die beiden
+      sedex Meldungen unterscheiden sich lediglich durch den Meldungstyp, der im
+      Umschlag steht. Die Nutzdaten verwenden das gleiche Schema und die gleichen
+      darin definierten Elemente.
+    </xs:documentation>
+  </xs:annotation>
+  
+  <xs:import namespace="http://www.ech.ch/xmlns/eCH-0011/3" schemaLocation="http://www.ech.ch/xmlns/eCH-0011/3/eCH-0011-3-0.xsd"/>
+  <xs:import namespace="http://www.ech.ch/xmlns/eCH-0044/1" schemaLocation="http://www.ech.ch/xmlns/eCH-0044/1/eCH-0044-1-0.xsd"/>
+  
+  <xs:complexType name="errorInfoType">
+    <xs:sequence>
+      <xs:element name="code" type="xs:string">
+        <xs:annotation>
+          <xs:documentation xml:lang="de">
+            Nummerischer Code des Fehlers. Der Wertebereich und die Bedeutung 
+            dieser Codes sind in einem anderen Dokument spezifiziert.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="text" type="xs:string">
+        <xs:annotation>
+          <xs:documentation xml:lang="de">
+            Textuelle Beschreibung des Fehlers. Die Bedeutung ist in einem anderen 
+            Dokument spezifiziert.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+
+  <xs:complexType name="validationReportType">
+    <xs:annotation>
+      <xs:documentation xml:lang="de">
+        Elemente dieses Typs sind die vom Bundesamt für Statistik im Fall der Validierung
+        sowie Lieferung an die Statistik gelieferten Resultate.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="generalError" type="eCH-0099:errorInfoType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="de">
+            Auflistung der allgemeinen Fehler, die in dem angelieferten XML 
+            Dokument gefunden wurden. Allgemeine Fehler beziehen sich nicht
+            auf eine Person, sondern auf das angelieferte XML Dokument im Ganzen.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="personError" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="de">
+            Auflistung der personenbezogenen Fehler, die in dem angelieferten XML 
+            Dokument gefunden wurden. Personenbezogene Fehler beziehen sich auf
+            eine konkrete Person.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType >
+          <xs:sequence>
+            <xs:element name="personIdentification" type="eCH-0044:personIdentificationType">
+              <xs:annotation>
+                <xs:documentation xml:lang="de">
+                  Identifikation der Person, auf welche sich der Fehler bezieht.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="errorInfo" type="eCH-0099:errorInfoType" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation xml:lang="de">
+                  Informationen über den Fehler, der für diese Person gefunden wurde.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="egidAttribution" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="de">
+            Zuteilung eines Gebäudeidentifikators (EGID) zu einer Person, deren
+            Daten in dem angelieferten XML Dokument gefunden wurden. 
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType >
+          <xs:sequence>
+            <xs:element name="personIdentification" type="eCH-0044:personIdentificationType">
+              <xs:annotation>
+                <xs:documentation xml:lang="de">
+                  Identifikation der Person, auf welche sich diese Zuteilung bezieht.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="EGID" type="eCH-0011:EGIDType">
+              <xs:annotation>
+                <xs:documentation xml:lang="de">
+                  Gebäudeidentifikator, der vom BFS zugeteilt wurde.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="version" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="de">
+          Versionsnummer des XML Schemas, welches dieses Element beschreibt.
+        </xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="1.0"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:element name="delivery">
+    <xs:annotation>
+      <xs:documentation xml:lang="de">
+        Ein solches Element wird im Fall der Validierung sowie Lieferung an die 
+        Statistik als Lieferobjekt an das Bundesamt für Statistik gesendet.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="reportedPerson" type="eCH-0011:reportedPersonType" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="version" use="required">
+        <xs:annotation>
+          <xs:documentation xml:lang="de">
+            Versionsnummer des XML Schemas, welches dieses Element beschreibt.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1.1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="receipt">
+    <xs:annotation>
+      <xs:documentation xml:lang="de">
+        Ein solches Element wird vom Bundesamt für Statistik im Fall der Validierung
+        sowie Lieferung an die Statistik als fachliche Quittung an das sendende EWR
+        geschickt. Die Quittung bestätigt, dass die Meldung in die Verarbeitungsprozess
+        weitergereicht wurde.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="eventTime" type="xs:date">
+          <xs:annotation>
+            <xs:documentation xml:lang="de">
+              Zeitstempfel. Gibt den Zeitpunkt an, wann das angelieferte XML Dokument
+              in den Verarbeitungsprozess übertragen wurde.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" use="required">
+        <xs:annotation>
+          <xs:documentation xml:lang="de">
+            Versionsnummer des XML Schemas, welches dieses Element beschreibt.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="validationReport" type="eCH-0099:validationReportType">
+    <xs:annotation>
+      <xs:documentation xml:lang="de">
+        Ein solches Element wird vom Bundesamt für Statistik im Fall der Validierung
+        sowie Lieferung an die Statistik als Resultat geliefert.
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  
+</xs:schema>

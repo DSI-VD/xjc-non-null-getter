@@ -1,2 +1,3 @@
 # xjc-non-null-getter
-JAXB Plugin that adds non-null getters
+Jaxb2 Plugin that adds getters, creating the corresponding object, and adding it to the attribute if null
+
