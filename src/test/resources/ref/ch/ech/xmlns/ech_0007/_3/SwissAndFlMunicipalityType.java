@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Classe Java pour swissAndFlMunicipalityType complex type.
+ * <p>Java class for swissAndFlMunicipalityType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="swissAndFlMunicipalityType"&gt;
@@ -52,7 +52,7 @@ public class SwissAndFlMunicipalityType {
     protected Integer historyMunicipialityId;
 
     /**
-     * Obtient la valeur de la propriété municipalityId.
+     * Gets the value of the municipalityId property.
      * 
      */
     public int getMunicipalityId() {
@@ -60,7 +60,7 @@ public class SwissAndFlMunicipalityType {
     }
 
     /**
-     * Définit la valeur de la propriété municipalityId.
+     * Sets the value of the municipalityId property.
      * 
      */
     public void setMunicipalityId(int value) {
@@ -72,7 +72,7 @@ public class SwissAndFlMunicipalityType {
     }
 
     /**
-     * Obtient la valeur de la propriété municipalityName.
+     * Gets the value of the municipalityName property.
      * 
      * @return
      *     possible object is
@@ -84,7 +84,7 @@ public class SwissAndFlMunicipalityType {
     }
 
     /**
-     * Définit la valeur de la propriété municipalityName.
+     * Sets the value of the municipalityName property.
      * 
      * @param value
      *     allowed object is
@@ -100,7 +100,7 @@ public class SwissAndFlMunicipalityType {
     }
 
     /**
-     * Obtient la valeur de la propriété cantonFlAbbreviation.
+     * Gets the value of the cantonFlAbbreviation property.
      * 
      * @return
      *     possible object is
@@ -112,7 +112,7 @@ public class SwissAndFlMunicipalityType {
     }
 
     /**
-     * Définit la valeur de la propriété cantonFlAbbreviation.
+     * Sets the value of the cantonFlAbbreviation property.
      * 
      * @param value
      *     allowed object is
@@ -128,7 +128,7 @@ public class SwissAndFlMunicipalityType {
     }
 
     /**
-     * Obtient la valeur de la propriété historyMunicipialityId.
+     * Gets the value of the historyMunicipialityId property.
      * 
      * @return
      *     possible object is
@@ -140,7 +140,7 @@ public class SwissAndFlMunicipalityType {
     }
 
     /**
-     * Définit la valeur de la propriété historyMunicipialityId.
+     * Sets the value of the historyMunicipialityId property.
      * 
      * @param value
      *     allowed object is

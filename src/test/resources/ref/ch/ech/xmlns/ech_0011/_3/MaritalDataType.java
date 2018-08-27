@@ -12,9 +12,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour maritalDataType complex type.
+ * <p>Java class for maritalDataType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="maritalDataType"&gt;
@@ -66,7 +66,7 @@ public class MaritalDataType {
     protected MaritalDataType.CancellationReason cancelationReason;
 
     /**
-     * Obtient la valeur de la propriété maritalStatus.
+     * Gets the value of the maritalStatus property.
      * 
      * @return
      *     possible object is
@@ -78,7 +78,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Définit la valeur de la propriété maritalStatus.
+     * Sets the value of the maritalStatus property.
      * 
      * @param value
      *     allowed object is
@@ -94,7 +94,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Obtient la valeur de la propriété dateOfMaritalStatus.
+     * Gets the value of the dateOfMaritalStatus property.
      * 
      * @return
      *     possible object is
@@ -106,7 +106,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Définit la valeur de la propriété dateOfMaritalStatus.
+     * Sets the value of the dateOfMaritalStatus property.
      * 
      * @param value
      *     allowed object is
@@ -122,7 +122,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Obtient la valeur de la propriété separation.
+     * Gets the value of the separation property.
      * 
      * @return
      *     possible object is
@@ -134,7 +134,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Définit la valeur de la propriété separation.
+     * Sets the value of the separation property.
      * 
      * @param value
      *     allowed object is
@@ -150,7 +150,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Obtient la valeur de la propriété dateOfSeparation.
+     * Gets the value of the dateOfSeparation property.
      * 
      * @return
      *     possible object is
@@ -162,7 +162,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Définit la valeur de la propriété dateOfSeparation.
+     * Sets the value of the dateOfSeparation property.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Obtient la valeur de la propriété cancelationReason.
+     * Gets the value of the cancelationReason property.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class MaritalDataType {
     }
 
     /**
-     * Définit la valeur de la propriété cancelationReason.
+     * Sets the value of the cancelationReason property.
      * 
      * @param value
      *     allowed object is
@@ -207,9 +207,9 @@ public class MaritalDataType {
 
 
     /**
-     * <p>Classe Java pour null.
+     * <p>Java class for null.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * <p>
      * <pre>
      * &lt;simpleType&gt;

@@ -10,9 +10,9 @@ import ch.ech.xmlns.ech_0007._3.CantonAbbreviationType;
 
 
 /**
- * <p>Classe Java pour placeOfOriginType complex type.
+ * <p>Java class for placeOfOriginType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="placeOfOriginType"&gt;
@@ -49,7 +49,7 @@ public class PlaceOfOriginType {
     protected CantonAbbreviationType canton;
 
     /**
-     * Obtient la valeur de la propriété originName.
+     * Gets the value of the originName property.
      * 
      * @return
      *     possible object is
@@ -61,7 +61,7 @@ public class PlaceOfOriginType {
     }
 
     /**
-     * Définit la valeur de la propriété originName.
+     * Sets the value of the originName property.
      * 
      * @param value
      *     allowed object is
@@ -77,7 +77,7 @@ public class PlaceOfOriginType {
     }
 
     /**
-     * Obtient la valeur de la propriété canton.
+     * Gets the value of the canton property.
      * 
      * @return
      *     possible object is
@@ -89,7 +89,7 @@ public class PlaceOfOriginType {
     }
 
     /**
-     * Définit la valeur de la propriété canton.
+     * Sets the value of the canton property.
      * 
      * @param value
      *     allowed object is

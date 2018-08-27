@@ -12,9 +12,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Classe Java pour namedPersonIdType complex type.
+ * <p>Java class for namedPersonIdType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="namedPersonIdType"&gt;
@@ -57,7 +57,7 @@ public class NamedPersonIdType {
     protected String personId;
 
     /**
-     * Obtient la valeur de la propriété personIdCategory.
+     * Gets the value of the personIdCategory property.
      * 
      * @return
      *     possible object is
@@ -69,7 +69,7 @@ public class NamedPersonIdType {
     }
 
     /**
-     * Définit la valeur de la propriété personIdCategory.
+     * Sets the value of the personIdCategory property.
      * 
      * @param value
      *     allowed object is
@@ -85,7 +85,7 @@ public class NamedPersonIdType {
     }
 
     /**
-     * Obtient la valeur de la propriété personId.
+     * Gets the value of the personId property.
      * 
      * @return
      *     possible object is
@@ -97,7 +97,7 @@ public class NamedPersonIdType {
     }
 
     /**
-     * Définit la valeur de la propriété personId.
+     * Sets the value of the personId property.
      * 
      * @param value
      *     allowed object is

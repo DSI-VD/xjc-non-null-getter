@@ -13,9 +13,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Classe Java pour personIdentificationType complex type.
+ * <p>Java class for personIdentificationType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="personIdentificationType"&gt;
@@ -81,7 +81,7 @@ public class PersonIdentificationType {
     protected DatePartiallyKnownType dateOfBirth;
 
     /**
-     * Obtient la valeur de la propriété vn.
+     * Gets the value of the vn property.
      * 
      * @return
      *     possible object is
@@ -93,7 +93,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Définit la valeur de la propriété vn.
+     * Sets the value of the vn property.
      * 
      * @param value
      *     allowed object is
@@ -109,7 +109,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Obtient la valeur de la propriété localPersonId.
+     * Gets the value of the localPersonId property.
      * 
      * @return
      *     possible object is
@@ -121,7 +121,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Définit la valeur de la propriété localPersonId.
+     * Sets the value of the localPersonId property.
      * 
      * @param value
      *     allowed object is
@@ -211,7 +211,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Obtient la valeur de la propriété officialName.
+     * Gets the value of the officialName property.
      * 
      * @return
      *     possible object is
@@ -223,7 +223,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Définit la valeur de la propriété officialName.
+     * Sets the value of the officialName property.
      * 
      * @param value
      *     allowed object is
@@ -239,7 +239,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Obtient la valeur de la propriété firstName.
+     * Gets the value of the firstName property.
      * 
      * @return
      *     possible object is
@@ -251,7 +251,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Définit la valeur de la propriété firstName.
+     * Sets the value of the firstName property.
      * 
      * @param value
      *     allowed object is
@@ -267,7 +267,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Obtient la valeur de la propriété sex.
+     * Gets the value of the sex property.
      * 
      * @return
      *     possible object is
@@ -279,7 +279,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Définit la valeur de la propriété sex.
+     * Sets the value of the sex property.
      * 
      * @param value
      *     allowed object is
@@ -295,7 +295,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Obtient la valeur de la propriété dateOfBirth.
+     * Gets the value of the dateOfBirth property.
      * 
      * @return
      *     possible object is
@@ -307,7 +307,7 @@ public class PersonIdentificationType {
     }
 
     /**
-     * Définit la valeur de la propriété dateOfBirth.
+     * Sets the value of the dateOfBirth property.
      * 
      * @param value
      *     allowed object is
@@ -350,9 +350,9 @@ public class PersonIdentificationType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;

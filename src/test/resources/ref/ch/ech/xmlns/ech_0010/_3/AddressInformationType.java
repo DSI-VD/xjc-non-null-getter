@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Classe Java pour addressInformationType complex type.
+ * <p>Java class for addressInformationType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="addressInformationType"&gt;
@@ -109,7 +109,7 @@ public class AddressInformationType {
     protected String country;
 
     /**
-     * Obtient la valeur de la propriété addressLine1.
+     * Gets the value of the addressLine1 property.
      * 
      * @return
      *     possible object is
@@ -121,7 +121,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété addressLine1.
+     * Sets the value of the addressLine1 property.
      * 
      * @param value
      *     allowed object is
@@ -137,7 +137,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété addressLine2.
+     * Gets the value of the addressLine2 property.
      * 
      * @return
      *     possible object is
@@ -149,7 +149,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété addressLine2.
+     * Sets the value of the addressLine2 property.
      * 
      * @param value
      *     allowed object is
@@ -165,7 +165,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété street.
+     * Gets the value of the street property.
      * 
      * @return
      *     possible object is
@@ -177,7 +177,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété street.
+     * Sets the value of the street property.
      * 
      * @param value
      *     allowed object is
@@ -193,7 +193,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété houseNumber.
+     * Gets the value of the houseNumber property.
      * 
      * @return
      *     possible object is
@@ -205,7 +205,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété houseNumber.
+     * Sets the value of the houseNumber property.
      * 
      * @param value
      *     allowed object is
@@ -221,7 +221,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété dwellingNumber.
+     * Gets the value of the dwellingNumber property.
      * 
      * @return
      *     possible object is
@@ -233,7 +233,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété dwellingNumber.
+     * Sets the value of the dwellingNumber property.
      * 
      * @param value
      *     allowed object is
@@ -249,7 +249,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété postOfficeBoxNumber.
+     * Gets the value of the postOfficeBoxNumber property.
      * 
      * @return
      *     possible object is
@@ -261,7 +261,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété postOfficeBoxNumber.
+     * Sets the value of the postOfficeBoxNumber property.
      * 
      * @param value
      *     allowed object is
@@ -277,7 +277,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété postOfficeBoxText.
+     * Gets the value of the postOfficeBoxText property.
      * 
      * @return
      *     possible object is
@@ -289,7 +289,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété postOfficeBoxText.
+     * Sets the value of the postOfficeBoxText property.
      * 
      * @param value
      *     allowed object is
@@ -305,7 +305,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété locality.
+     * Gets the value of the locality property.
      * 
      * @return
      *     possible object is
@@ -317,7 +317,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété locality.
+     * Sets the value of the locality property.
      * 
      * @param value
      *     allowed object is
@@ -333,7 +333,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété town.
+     * Gets the value of the town property.
      * 
      * @return
      *     possible object is
@@ -345,7 +345,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété town.
+     * Sets the value of the town property.
      * 
      * @param value
      *     allowed object is
@@ -361,7 +361,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété swissZipCode.
+     * Gets the value of the swissZipCode property.
      * 
      * @return
      *     possible object is
@@ -373,7 +373,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété swissZipCode.
+     * Sets the value of the swissZipCode property.
      * 
      * @param value
      *     allowed object is
@@ -389,7 +389,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété swissZipCodeAddOn.
+     * Gets the value of the swissZipCodeAddOn property.
      * 
      * @return
      *     possible object is
@@ -401,7 +401,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété swissZipCodeAddOn.
+     * Sets the value of the swissZipCodeAddOn property.
      * 
      * @param value
      *     allowed object is
@@ -417,7 +417,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété swissZipCodeId.
+     * Gets the value of the swissZipCodeId property.
      * 
      * @return
      *     possible object is
@@ -429,7 +429,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété swissZipCodeId.
+     * Sets the value of the swissZipCodeId property.
      * 
      * @param value
      *     allowed object is
@@ -445,7 +445,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété foreignZipCode.
+     * Gets the value of the foreignZipCode property.
      * 
      * @return
      *     possible object is
@@ -457,7 +457,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété foreignZipCode.
+     * Sets the value of the foreignZipCode property.
      * 
      * @param value
      *     allowed object is
@@ -473,7 +473,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Obtient la valeur de la propriété country.
+     * Gets the value of the country property.
      * 
      * @return
      *     possible object is
@@ -485,7 +485,7 @@ public class AddressInformationType {
     }
 
     /**
-     * Définit la valeur de la propriété country.
+     * Sets the value of the country property.
      * 
      * @param value
      *     allowed object is

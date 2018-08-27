@@ -18,9 +18,9 @@ import ch.ech.xmlns.ech_0044._1.PersonIdentificationType;
  *         sowie Lieferung an die Statistik gelieferten Resultate.
  *       
  * 
- * <p>Classe Java pour validationReportType complex type.
+ * <p>Java class for validationReportType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="validationReportType"&gt;
@@ -193,7 +193,7 @@ public class ValidationReportType {
     }
 
     /**
-     * Obtient la valeur de la propriété version.
+     * Gets the value of the version property.
      * 
      * @return
      *     possible object is
@@ -205,7 +205,7 @@ public class ValidationReportType {
     }
 
     /**
-     * Définit la valeur de la propriété version.
+     * Sets the value of the version property.
      * 
      * @param value
      *     allowed object is
@@ -240,9 +240,9 @@ public class ValidationReportType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -273,7 +273,7 @@ public class ValidationReportType {
         protected long egid;
 
         /**
-         * Obtient la valeur de la propriété personIdentification.
+         * Gets the value of the personIdentification property.
          * 
          * @return
          *     possible object is
@@ -285,7 +285,7 @@ public class ValidationReportType {
         }
 
         /**
-         * Définit la valeur de la propriété personIdentification.
+         * Sets the value of the personIdentification property.
          * 
          * @param value
          *     allowed object is
@@ -301,7 +301,7 @@ public class ValidationReportType {
         }
 
         /**
-         * Obtient la valeur de la propriété egid.
+         * Gets the value of the egid property.
          * 
          */
         public long getEGID() {
@@ -309,7 +309,7 @@ public class ValidationReportType {
         }
 
         /**
-         * Définit la valeur de la propriété egid.
+         * Sets the value of the egid property.
          * 
          */
         public void setEGID(long value) {
@@ -331,9 +331,9 @@ public class ValidationReportType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -363,7 +363,7 @@ public class ValidationReportType {
         protected List<ErrorInfoType> errorInfo;
 
         /**
-         * Obtient la valeur de la propriété personIdentification.
+         * Gets the value of the personIdentification property.
          * 
          * @return
          *     possible object is
@@ -375,7 +375,7 @@ public class ValidationReportType {
         }
 
         /**
-         * Définit la valeur de la propriété personIdentification.
+         * Sets the value of the personIdentification property.
          * 
          * @param value
          *     allowed object is

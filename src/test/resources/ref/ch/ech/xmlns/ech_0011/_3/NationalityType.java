@@ -10,9 +10,9 @@ import ch.ech.xmlns.ech_0008._2.CountryType;
 
 
 /**
- * <p>Classe Java pour nationalityType complex type.
+ * <p>Java class for nationalityType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="nationalityType"&gt;
@@ -42,7 +42,7 @@ public class NationalityType {
     protected CountryType country;
 
     /**
-     * Obtient la valeur de la propriété nationalityStatus.
+     * Gets the value of the nationalityStatus property.
      * 
      * @return
      *     possible object is
@@ -54,7 +54,7 @@ public class NationalityType {
     }
 
     /**
-     * Définit la valeur de la propriété nationalityStatus.
+     * Sets the value of the nationalityStatus property.
      * 
      * @param value
      *     allowed object is
@@ -70,7 +70,7 @@ public class NationalityType {
     }
 
     /**
-     * Obtient la valeur de la propriété country.
+     * Gets the value of the country property.
      * 
      * @return
      *     possible object is
@@ -82,7 +82,7 @@ public class NationalityType {
     }
 
     /**
-     * Définit la valeur de la propriété country.
+     * Sets the value of the country property.
      * 
      * @param value
      *     allowed object is

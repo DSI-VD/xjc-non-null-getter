@@ -11,9 +11,9 @@ import ch.ech.xmlns.ech_0044._1.NamedPersonIdType;
 
 
 /**
- * <p>Classe Java pour partnerIdOrganisationType complex type.
+ * <p>Java class for partnerIdOrganisationType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="partnerIdOrganisationType"&gt;
@@ -43,7 +43,7 @@ public class PartnerIdOrganisationType {
     protected List<NamedPersonIdType> otherPersonId;
 
     /**
-     * Obtient la valeur de la propriété localPersonId.
+     * Gets the value of the localPersonId property.
      * 
      * @return
      *     possible object is
@@ -55,7 +55,7 @@ public class PartnerIdOrganisationType {
     }
 
     /**
-     * Définit la valeur de la propriété localPersonId.
+     * Sets the value of the localPersonId property.
      * 
      * @param value
      *     allowed object is

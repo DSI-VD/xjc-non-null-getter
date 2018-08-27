@@ -13,9 +13,9 @@ import ch.ech.xmlns.ech_0011._3.ReportedPersonType;
 
 
 /**
- * <p>Classe Java pour anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType&gt;
@@ -88,7 +88,7 @@ public class Delivery {
     }
 
     /**
-     * Obtient la valeur de la propriété version.
+     * Gets the value of the version property.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class Delivery {
     }
 
     /**
-     * Définit la valeur de la propriété version.
+     * Sets the value of the version property.
      * 
      * @param value
      *     allowed object is

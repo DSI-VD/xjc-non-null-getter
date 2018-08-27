@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Classe Java pour countryType complex type.
+ * <p>Java class for countryType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="countryType"&gt;
@@ -50,7 +50,7 @@ public class CountryType {
     protected String countryNameShort;
 
     /**
-     * Obtient la valeur de la propriété countryId.
+     * Gets the value of the countryId property.
      * 
      * @return
      *     possible object is
@@ -62,7 +62,7 @@ public class CountryType {
     }
 
     /**
-     * Définit la valeur de la propriété countryId.
+     * Sets the value of the countryId property.
      * 
      * @param value
      *     allowed object is
@@ -78,7 +78,7 @@ public class CountryType {
     }
 
     /**
-     * Obtient la valeur de la propriété countryIdISO2.
+     * Gets the value of the countryIdISO2 property.
      * 
      * @return
      *     possible object is
@@ -90,7 +90,7 @@ public class CountryType {
     }
 
     /**
-     * Définit la valeur de la propriété countryIdISO2.
+     * Sets the value of the countryIdISO2 property.
      * 
      * @param value
      *     allowed object is
@@ -106,7 +106,7 @@ public class CountryType {
     }
 
     /**
-     * Obtient la valeur de la propriété countryNameShort.
+     * Gets the value of the countryNameShort property.
      * 
      * @return
      *     possible object is
@@ -118,7 +118,7 @@ public class CountryType {
     }
 
     /**
-     * Définit la valeur de la propriété countryNameShort.
+     * Sets the value of the countryNameShort property.
      * 
      * @param value
      *     allowed object is

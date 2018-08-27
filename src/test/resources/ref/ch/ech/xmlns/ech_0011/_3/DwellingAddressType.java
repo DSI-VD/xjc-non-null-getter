@@ -13,9 +13,9 @@ import ch.ech.xmlns.ech_0010._3.SwissAddressInformationType;
 
 
 /**
- * <p>Classe Java pour dwellingAddressType complex type.
+ * <p>Java class for dwellingAddressType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="dwellingAddressType"&gt;
@@ -84,7 +84,7 @@ public class DwellingAddressType {
     protected XMLGregorianCalendar movingDate;
 
     /**
-     * Obtient la valeur de la propriété egid.
+     * Gets the value of the egid property.
      * 
      * @return
      *     possible object is
@@ -96,7 +96,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété egid.
+     * Sets the value of the egid property.
      * 
      * @param value
      *     allowed object is
@@ -112,7 +112,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Obtient la valeur de la propriété ewid.
+     * Gets the value of the ewid property.
      * 
      * @return
      *     possible object is
@@ -124,7 +124,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété ewid.
+     * Sets the value of the ewid property.
      * 
      * @param value
      *     allowed object is
@@ -140,7 +140,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Obtient la valeur de la propriété householdID.
+     * Gets the value of the householdID property.
      * 
      * @return
      *     possible object is
@@ -152,7 +152,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété householdID.
+     * Sets the value of the householdID property.
      * 
      * @param value
      *     allowed object is
@@ -168,7 +168,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Obtient la valeur de la propriété withoutEGID.
+     * Gets the value of the withoutEGID property.
      * 
      * @return
      *     possible object is
@@ -180,7 +180,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété withoutEGID.
+     * Sets the value of the withoutEGID property.
      * 
      * @param value
      *     allowed object is
@@ -196,7 +196,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Obtient la valeur de la propriété address.
+     * Gets the value of the address property.
      * 
      * @return
      *     possible object is
@@ -208,7 +208,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété address.
+     * Sets the value of the address property.
      * 
      * @param value
      *     allowed object is
@@ -224,7 +224,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Obtient la valeur de la propriété typeOfHousehold.
+     * Gets the value of the typeOfHousehold property.
      * 
      * @return
      *     possible object is
@@ -236,7 +236,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété typeOfHousehold.
+     * Sets the value of the typeOfHousehold property.
      * 
      * @param value
      *     allowed object is
@@ -252,7 +252,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Obtient la valeur de la propriété movingDate.
+     * Gets the value of the movingDate property.
      * 
      * @return
      *     possible object is
@@ -264,7 +264,7 @@ public class DwellingAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété movingDate.
+     * Sets the value of the movingDate property.
      * 
      * @param value
      *     allowed object is
@@ -295,9 +295,9 @@ public class DwellingAddressType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -325,7 +325,7 @@ public class DwellingAddressType {
         protected String householdID;
 
         /**
-         * Obtient la valeur de la propriété householdID.
+         * Gets the value of the householdID property.
          * 
          * @return
          *     possible object is
@@ -337,7 +337,7 @@ public class DwellingAddressType {
         }
 
         /**
-         * Définit la valeur de la propriété householdID.
+         * Sets the value of the householdID property.
          * 
          * @param value
          *     allowed object is

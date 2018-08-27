@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Classe Java pour swissMunicipalityType complex type.
+ * <p>Java class for swissMunicipalityType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="swissMunicipalityType"&gt;
@@ -51,7 +51,7 @@ public class SwissMunicipalityType {
     protected Integer historyMunicipialityId;
 
     /**
-     * Obtient la valeur de la propriété municipalityId.
+     * Gets the value of the municipalityId property.
      * 
      * @return
      *     possible object is
@@ -63,7 +63,7 @@ public class SwissMunicipalityType {
     }
 
     /**
-     * Définit la valeur de la propriété municipalityId.
+     * Sets the value of the municipalityId property.
      * 
      * @param value
      *     allowed object is
@@ -79,7 +79,7 @@ public class SwissMunicipalityType {
     }
 
     /**
-     * Obtient la valeur de la propriété municipalityName.
+     * Gets the value of the municipalityName property.
      * 
      * @return
      *     possible object is
@@ -91,7 +91,7 @@ public class SwissMunicipalityType {
     }
 
     /**
-     * Définit la valeur de la propriété municipalityName.
+     * Sets the value of the municipalityName property.
      * 
      * @param value
      *     allowed object is
@@ -107,7 +107,7 @@ public class SwissMunicipalityType {
     }
 
     /**
-     * Obtient la valeur de la propriété cantonAbbreviation.
+     * Gets the value of the cantonAbbreviation property.
      * 
      * @return
      *     possible object is
@@ -119,7 +119,7 @@ public class SwissMunicipalityType {
     }
 
     /**
-     * Définit la valeur de la propriété cantonAbbreviation.
+     * Sets the value of the cantonAbbreviation property.
      * 
      * @param value
      *     allowed object is
@@ -135,7 +135,7 @@ public class SwissMunicipalityType {
     }
 
     /**
-     * Obtient la valeur de la propriété historyMunicipialityId.
+     * Gets the value of the historyMunicipialityId property.
      * 
      * @return
      *     possible object is
@@ -147,7 +147,7 @@ public class SwissMunicipalityType {
     }
 
     /**
-     * Définit la valeur de la propriété historyMunicipialityId.
+     * Sets the value of the historyMunicipialityId property.
      * 
      * @param value
      *     allowed object is

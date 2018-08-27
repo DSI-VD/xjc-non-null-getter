@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType&gt;
@@ -66,7 +66,7 @@ public class PermitRoot {
     protected ResidencePermitToBeRegisteredType residencePermitToBeRegisteredType;
 
     /**
-     * Obtient la valeur de la propriété residencePermitCategory.
+     * Gets the value of the residencePermitCategory property.
      * 
      * @return
      *     possible object is
@@ -78,7 +78,7 @@ public class PermitRoot {
     }
 
     /**
-     * Définit la valeur de la propriété residencePermitCategory.
+     * Sets the value of the residencePermitCategory property.
      * 
      * @param value
      *     allowed object is
@@ -94,7 +94,7 @@ public class PermitRoot {
     }
 
     /**
-     * Obtient la valeur de la propriété residencePermitRuling.
+     * Gets the value of the residencePermitRuling property.
      * 
      * @return
      *     possible object is
@@ -106,7 +106,7 @@ public class PermitRoot {
     }
 
     /**
-     * Définit la valeur de la propriété residencePermitRuling.
+     * Sets the value of the residencePermitRuling property.
      * 
      * @param value
      *     allowed object is
@@ -122,7 +122,7 @@ public class PermitRoot {
     }
 
     /**
-     * Obtient la valeur de la propriété residencePermitBorder.
+     * Gets the value of the residencePermitBorder property.
      * 
      * @return
      *     possible object is
@@ -134,7 +134,7 @@ public class PermitRoot {
     }
 
     /**
-     * Définit la valeur de la propriété residencePermitBorder.
+     * Sets the value of the residencePermitBorder property.
      * 
      * @param value
      *     allowed object is
@@ -150,7 +150,7 @@ public class PermitRoot {
     }
 
     /**
-     * Obtient la valeur de la propriété residencePermitShortType.
+     * Gets the value of the residencePermitShortType property.
      * 
      * @return
      *     possible object is
@@ -162,7 +162,7 @@ public class PermitRoot {
     }
 
     /**
-     * Définit la valeur de la propriété residencePermitShortType.
+     * Sets the value of the residencePermitShortType property.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class PermitRoot {
     }
 
     /**
-     * Obtient la valeur de la propriété residencePermit.
+     * Gets the value of the residencePermit property.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class PermitRoot {
     }
 
     /**
-     * Définit la valeur de la propriété residencePermit.
+     * Sets the value of the residencePermit property.
      * 
      * @param value
      *     allowed object is
@@ -206,7 +206,7 @@ public class PermitRoot {
     }
 
     /**
-     * Obtient la valeur de la propriété inhabitantControl.
+     * Gets the value of the inhabitantControl property.
      * 
      * @return
      *     possible object is
@@ -218,7 +218,7 @@ public class PermitRoot {
     }
 
     /**
-     * Définit la valeur de la propriété inhabitantControl.
+     * Sets the value of the inhabitantControl property.
      * 
      * @param value
      *     allowed object is
@@ -234,7 +234,7 @@ public class PermitRoot {
     }
 
     /**
-     * Obtient la valeur de la propriété residencePermitDetailedType.
+     * Gets the value of the residencePermitDetailedType property.
      * 
      * @return
      *     possible object is
@@ -246,7 +246,7 @@ public class PermitRoot {
     }
 
     /**
-     * Définit la valeur de la propriété residencePermitDetailedType.
+     * Sets the value of the residencePermitDetailedType property.
      * 
      * @param value
      *     allowed object is
@@ -262,7 +262,7 @@ public class PermitRoot {
     }
 
     /**
-     * Obtient la valeur de la propriété residencePermitToBeRegisteredType.
+     * Gets the value of the residencePermitToBeRegisteredType property.
      * 
      * @return
      *     possible object is
@@ -274,7 +274,7 @@ public class PermitRoot {
     }
 
     /**
-     * Définit la valeur de la propriété residencePermitToBeRegisteredType.
+     * Sets the value of the residencePermitToBeRegisteredType property.
      * 
      * @param value
      *     allowed object is

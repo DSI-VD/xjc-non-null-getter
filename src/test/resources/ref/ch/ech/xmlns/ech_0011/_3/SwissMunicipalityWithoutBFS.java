@@ -12,9 +12,9 @@ import ch.ech.xmlns.ech_0007._3.CantonAbbreviationType;
 
 
 /**
- * <p>Classe Java pour swissMunicipalityWithoutBFS complex type.
+ * <p>Java class for swissMunicipalityWithoutBFS complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="swissMunicipalityWithoutBFS"&gt;
@@ -49,7 +49,7 @@ public class SwissMunicipalityWithoutBFS {
     protected CantonAbbreviationType cantonAbbreviation;
 
     /**
-     * Obtient la valeur de la propriété municipalityId.
+     * Gets the value of the municipalityId property.
      * 
      * @return
      *     possible object is
@@ -61,7 +61,7 @@ public class SwissMunicipalityWithoutBFS {
     }
 
     /**
-     * Définit la valeur de la propriété municipalityId.
+     * Sets the value of the municipalityId property.
      * 
      * @param value
      *     allowed object is
@@ -77,7 +77,7 @@ public class SwissMunicipalityWithoutBFS {
     }
 
     /**
-     * Obtient la valeur de la propriété municipalityName.
+     * Gets the value of the municipalityName property.
      * 
      * @return
      *     possible object is
@@ -89,7 +89,7 @@ public class SwissMunicipalityWithoutBFS {
     }
 
     /**
-     * Définit la valeur de la propriété municipalityName.
+     * Sets the value of the municipalityName property.
      * 
      * @param value
      *     allowed object is
@@ -105,7 +105,7 @@ public class SwissMunicipalityWithoutBFS {
     }
 
     /**
-     * Obtient la valeur de la propriété cantonAbbreviation.
+     * Gets the value of the cantonAbbreviation property.
      * 
      * @return
      *     possible object is
@@ -117,7 +117,7 @@ public class SwissMunicipalityWithoutBFS {
     }
 
     /**
-     * Définit la valeur de la propriété cantonAbbreviation.
+     * Sets the value of the cantonAbbreviation property.
      * 
      * @param value
      *     allowed object is

@@ -11,9 +11,9 @@ import ch.ech.xmlns.ech_0007._3.SwissMunicipalityType;
 
 
 /**
- * <p>Classe Java pour secondaryResidenceType complex type.
+ * <p>Java class for secondaryResidenceType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="secondaryResidenceType"&gt;
@@ -58,7 +58,7 @@ public class SecondaryResidenceType {
     protected SecondaryResidenceType.SecondaryResidence secondaryResidence;
 
     /**
-     * Obtient la valeur de la propriété mainResidence.
+     * Gets the value of the mainResidence property.
      * 
      * @return
      *     possible object is
@@ -70,7 +70,7 @@ public class SecondaryResidenceType {
     }
 
     /**
-     * Définit la valeur de la propriété mainResidence.
+     * Sets the value of the mainResidence property.
      * 
      * @param value
      *     allowed object is
@@ -86,7 +86,7 @@ public class SecondaryResidenceType {
     }
 
     /**
-     * Obtient la valeur de la propriété secondaryResidence.
+     * Gets the value of the secondaryResidence property.
      * 
      * @return
      *     possible object is
@@ -98,7 +98,7 @@ public class SecondaryResidenceType {
     }
 
     /**
-     * Définit la valeur de la propriété secondaryResidence.
+     * Sets the value of the secondaryResidence property.
      * 
      * @param value
      *     allowed object is
@@ -129,9 +129,9 @@ public class SecondaryResidenceType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -177,7 +177,7 @@ public class SecondaryResidenceType {
         protected DestinationType goesTo;
 
         /**
-         * Obtient la valeur de la propriété reportingMunicipality.
+         * Gets the value of the reportingMunicipality property.
          * 
          * @return
          *     possible object is
@@ -189,7 +189,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété reportingMunicipality.
+         * Sets the value of the reportingMunicipality property.
          * 
          * @param value
          *     allowed object is
@@ -205,7 +205,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété arrivalDate.
+         * Gets the value of the arrivalDate property.
          * 
          * @return
          *     possible object is
@@ -217,7 +217,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété arrivalDate.
+         * Sets the value of the arrivalDate property.
          * 
          * @param value
          *     allowed object is
@@ -233,7 +233,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété comesFrom.
+         * Gets the value of the comesFrom property.
          * 
          * @return
          *     possible object is
@@ -245,7 +245,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété comesFrom.
+         * Sets the value of the comesFrom property.
          * 
          * @param value
          *     allowed object is
@@ -261,7 +261,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété dwellingAddress.
+         * Gets the value of the dwellingAddress property.
          * 
          * @return
          *     possible object is
@@ -273,7 +273,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété dwellingAddress.
+         * Sets the value of the dwellingAddress property.
          * 
          * @param value
          *     allowed object is
@@ -289,7 +289,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété departureDate.
+         * Gets the value of the departureDate property.
          * 
          * @return
          *     possible object is
@@ -301,7 +301,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété departureDate.
+         * Sets the value of the departureDate property.
          * 
          * @param value
          *     allowed object is
@@ -317,7 +317,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété goesTo.
+         * Gets the value of the goesTo property.
          * 
          * @return
          *     possible object is
@@ -329,7 +329,7 @@ public class SecondaryResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété goesTo.
+         * Sets the value of the goesTo property.
          * 
          * @param value
          *     allowed object is

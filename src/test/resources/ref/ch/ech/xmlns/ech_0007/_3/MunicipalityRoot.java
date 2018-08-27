@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType&gt;
@@ -39,7 +39,7 @@ public class MunicipalityRoot {
     protected SwissAndFlMunicipalityType swissAndFlMunicipality;
 
     /**
-     * Obtient la valeur de la propriété swissMunicipality.
+     * Gets the value of the swissMunicipality property.
      * 
      * @return
      *     possible object is
@@ -51,7 +51,7 @@ public class MunicipalityRoot {
     }
 
     /**
-     * Définit la valeur de la propriété swissMunicipality.
+     * Sets the value of the swissMunicipality property.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +67,7 @@ public class MunicipalityRoot {
     }
 
     /**
-     * Obtient la valeur de la propriété swissAndFlMunicipality.
+     * Gets the value of the swissAndFlMunicipality property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class MunicipalityRoot {
     }
 
     /**
-     * Définit la valeur de la propriété swissAndFlMunicipality.
+     * Sets the value of the swissAndFlMunicipality property.
      * 
      * @param value
      *     allowed object is

@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour mrMrsType.
+ * <p>Java class for mrMrsType.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
  * &lt;simpleType name="mrMrsType"&gt;

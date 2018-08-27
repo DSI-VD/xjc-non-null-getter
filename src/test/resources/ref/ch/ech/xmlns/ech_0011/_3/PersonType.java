@@ -15,9 +15,9 @@ import ch.ech.xmlns.ech_0044._1.PersonIdentificationType;
 
 
 /**
- * <p>Classe Java pour personType complex type.
+ * <p>Java class for personType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="personType"&gt;
@@ -83,7 +83,7 @@ public class PersonType {
     protected PersonType.Coredata coredata;
 
     /**
-     * Obtient la valeur de la propriété personIdentification.
+     * Gets the value of the personIdentification property.
      * 
      * @return
      *     possible object is
@@ -95,7 +95,7 @@ public class PersonType {
     }
 
     /**
-     * Définit la valeur de la propriété personIdentification.
+     * Sets the value of the personIdentification property.
      * 
      * @param value
      *     allowed object is
@@ -111,7 +111,7 @@ public class PersonType {
     }
 
     /**
-     * Obtient la valeur de la propriété coredata.
+     * Gets the value of the coredata property.
      * 
      * @return
      *     possible object is
@@ -123,7 +123,7 @@ public class PersonType {
     }
 
     /**
-     * Définit la valeur de la propriété coredata.
+     * Sets the value of the coredata property.
      * 
      * @param value
      *     allowed object is
@@ -154,9 +154,9 @@ public class PersonType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -246,7 +246,7 @@ public class PersonType {
         protected String religion;
 
         /**
-         * Obtient la valeur de la propriété originalName.
+         * Gets the value of the originalName property.
          * 
          * @return
          *     possible object is
@@ -258,7 +258,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété originalName.
+         * Sets the value of the originalName property.
          * 
          * @param value
          *     allowed object is
@@ -274,7 +274,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété alliancePartnershipName.
+         * Gets the value of the alliancePartnershipName property.
          * 
          * @return
          *     possible object is
@@ -286,7 +286,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété alliancePartnershipName.
+         * Sets the value of the alliancePartnershipName property.
          * 
          * @param value
          *     allowed object is
@@ -302,7 +302,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété aliasName.
+         * Gets the value of the aliasName property.
          * 
          * @return
          *     possible object is
@@ -314,7 +314,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété aliasName.
+         * Sets the value of the aliasName property.
          * 
          * @param value
          *     allowed object is
@@ -330,7 +330,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété otherName.
+         * Gets the value of the otherName property.
          * 
          * @return
          *     possible object is
@@ -342,7 +342,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété otherName.
+         * Sets the value of the otherName property.
          * 
          * @param value
          *     allowed object is
@@ -358,7 +358,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété callName.
+         * Gets the value of the callName property.
          * 
          * @return
          *     possible object is
@@ -370,7 +370,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété callName.
+         * Sets the value of the callName property.
          * 
          * @param value
          *     allowed object is
@@ -386,7 +386,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété placeOfBirth.
+         * Gets the value of the placeOfBirth property.
          * 
          * @return
          *     possible object is
@@ -398,7 +398,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété placeOfBirth.
+         * Sets the value of the placeOfBirth property.
          * 
          * @param value
          *     allowed object is
@@ -414,7 +414,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété dateOfDeath.
+         * Gets the value of the dateOfDeath property.
          * 
          * @return
          *     possible object is
@@ -426,7 +426,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété dateOfDeath.
+         * Sets the value of the dateOfDeath property.
          * 
          * @param value
          *     allowed object is
@@ -442,7 +442,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété maritalData.
+         * Gets the value of the maritalData property.
          * 
          * @return
          *     possible object is
@@ -454,7 +454,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété maritalData.
+         * Sets the value of the maritalData property.
          * 
          * @param value
          *     allowed object is
@@ -470,7 +470,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété nationality.
+         * Gets the value of the nationality property.
          * 
          * @return
          *     possible object is
@@ -482,7 +482,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété nationality.
+         * Sets the value of the nationality property.
          * 
          * @param value
          *     allowed object is
@@ -498,7 +498,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété contact.
+         * Gets the value of the contact property.
          * 
          * @return
          *     possible object is
@@ -510,7 +510,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété contact.
+         * Sets the value of the contact property.
          * 
          * @param value
          *     allowed object is
@@ -526,7 +526,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété languageOfCorrespondance.
+         * Gets the value of the languageOfCorrespondance property.
          * 
          * @return
          *     possible object is
@@ -538,7 +538,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété languageOfCorrespondance.
+         * Sets the value of the languageOfCorrespondance property.
          * 
          * @param value
          *     allowed object is
@@ -554,7 +554,7 @@ public class PersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété religion.
+         * Gets the value of the religion property.
          * 
          * @return
          *     possible object is
@@ -566,7 +566,7 @@ public class PersonType {
         }
 
         /**
-         * Définit la valeur de la propriété religion.
+         * Sets the value of the religion property.
          * 
          * @param value
          *     allowed object is
@@ -611,9 +611,9 @@ public class PersonType {
 
 
         /**
-         * <p>Classe Java pour anonymous complex type.
+         * <p>Java class for anonymous complex type.
          * 
-         * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+         * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
          * &lt;complexType&gt;
@@ -650,7 +650,7 @@ public class PersonType {
             protected MailAddressType contactAddress;
 
             /**
-             * Obtient la valeur de la propriété personIdentification.
+             * Gets the value of the personIdentification property.
              * 
              * @return
              *     possible object is
@@ -662,7 +662,7 @@ public class PersonType {
             }
 
             /**
-             * Définit la valeur de la propriété personIdentification.
+             * Sets the value of the personIdentification property.
              * 
              * @param value
              *     allowed object is
@@ -678,7 +678,7 @@ public class PersonType {
             }
 
             /**
-             * Obtient la valeur de la propriété personIdentificationPartner.
+             * Gets the value of the personIdentificationPartner property.
              * 
              * @return
              *     possible object is
@@ -690,7 +690,7 @@ public class PersonType {
             }
 
             /**
-             * Définit la valeur de la propriété personIdentificationPartner.
+             * Sets the value of the personIdentificationPartner property.
              * 
              * @param value
              *     allowed object is
@@ -706,7 +706,7 @@ public class PersonType {
             }
 
             /**
-             * Obtient la valeur de la propriété partnerIdOrgnisation.
+             * Gets the value of the partnerIdOrgnisation property.
              * 
              * @return
              *     possible object is
@@ -718,7 +718,7 @@ public class PersonType {
             }
 
             /**
-             * Définit la valeur de la propriété partnerIdOrgnisation.
+             * Sets the value of the partnerIdOrgnisation property.
              * 
              * @param value
              *     allowed object is
@@ -734,7 +734,7 @@ public class PersonType {
             }
 
             /**
-             * Obtient la valeur de la propriété contactAddress.
+             * Gets the value of the contactAddress property.
              * 
              * @return
              *     possible object is
@@ -746,7 +746,7 @@ public class PersonType {
             }
 
             /**
-             * Définit la valeur de la propriété contactAddress.
+             * Sets the value of the contactAddress property.
              * 
              * @param value
              *     allowed object is

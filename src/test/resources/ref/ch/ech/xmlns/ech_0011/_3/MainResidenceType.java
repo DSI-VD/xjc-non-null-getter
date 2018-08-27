@@ -13,9 +13,9 @@ import ch.ech.xmlns.ech_0007._3.SwissMunicipalityType;
 
 
 /**
- * <p>Classe Java pour mainResidenceType complex type.
+ * <p>Java class for mainResidenceType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="mainResidenceType"&gt;
@@ -59,7 +59,7 @@ public class MainResidenceType {
     protected List<SwissMunicipalityType> secondaryResidence;
 
     /**
-     * Obtient la valeur de la propriété mainResidence.
+     * Gets the value of the mainResidence property.
      * 
      * @return
      *     possible object is
@@ -71,7 +71,7 @@ public class MainResidenceType {
     }
 
     /**
-     * Définit la valeur de la propriété mainResidence.
+     * Sets the value of the mainResidence property.
      * 
      * @param value
      *     allowed object is
@@ -138,9 +138,9 @@ public class MainResidenceType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -185,7 +185,7 @@ public class MainResidenceType {
         protected DestinationType goesTo;
 
         /**
-         * Obtient la valeur de la propriété reportingMunicipality.
+         * Gets the value of the reportingMunicipality property.
          * 
          * @return
          *     possible object is
@@ -197,7 +197,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété reportingMunicipality.
+         * Sets the value of the reportingMunicipality property.
          * 
          * @param value
          *     allowed object is
@@ -213,7 +213,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété arrivalDate.
+         * Gets the value of the arrivalDate property.
          * 
          * @return
          *     possible object is
@@ -225,7 +225,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété arrivalDate.
+         * Sets the value of the arrivalDate property.
          * 
          * @param value
          *     allowed object is
@@ -241,7 +241,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété comesFrom.
+         * Gets the value of the comesFrom property.
          * 
          * @return
          *     possible object is
@@ -253,7 +253,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété comesFrom.
+         * Sets the value of the comesFrom property.
          * 
          * @param value
          *     allowed object is
@@ -269,7 +269,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété dwellingAddress.
+         * Gets the value of the dwellingAddress property.
          * 
          * @return
          *     possible object is
@@ -281,7 +281,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété dwellingAddress.
+         * Sets the value of the dwellingAddress property.
          * 
          * @param value
          *     allowed object is
@@ -297,7 +297,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété departureDate.
+         * Gets the value of the departureDate property.
          * 
          * @return
          *     possible object is
@@ -309,7 +309,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété departureDate.
+         * Sets the value of the departureDate property.
          * 
          * @param value
          *     allowed object is
@@ -325,7 +325,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Obtient la valeur de la propriété goesTo.
+         * Gets the value of the goesTo property.
          * 
          * @return
          *     possible object is
@@ -337,7 +337,7 @@ public class MainResidenceType {
         }
 
         /**
-         * Définit la valeur de la propriété goesTo.
+         * Sets the value of the goesTo property.
          * 
          * @param value
          *     allowed object is

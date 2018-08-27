@@ -15,9 +15,9 @@ import ch.ech.xmlns.ech_0006._2.ResidencePermitType;
 
 
 /**
- * <p>Classe Java pour anyPersonType complex type.
+ * <p>Java class for anyPersonType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="anyPersonType"&gt;
@@ -67,7 +67,7 @@ public class AnyPersonType {
     protected AnyPersonType.Foreigner foreigner;
 
     /**
-     * Obtient la valeur de la propriété swiss.
+     * Gets the value of the swiss property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class AnyPersonType {
     }
 
     /**
-     * Définit la valeur de la propriété swiss.
+     * Sets the value of the swiss property.
      * 
      * @param value
      *     allowed object is
@@ -95,7 +95,7 @@ public class AnyPersonType {
     }
 
     /**
-     * Obtient la valeur de la propriété foreigner.
+     * Gets the value of the foreigner property.
      * 
      * @return
      *     possible object is
@@ -107,7 +107,7 @@ public class AnyPersonType {
     }
 
     /**
-     * Définit la valeur de la propriété foreigner.
+     * Sets the value of the foreigner property.
      * 
      * @param value
      *     allowed object is
@@ -138,9 +138,9 @@ public class AnyPersonType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -176,7 +176,7 @@ public class AnyPersonType {
         protected String nameOnPassport;
 
         /**
-         * Obtient la valeur de la propriété residencePermit.
+         * Gets the value of the residencePermit property.
          * 
          * @return
          *     possible object is
@@ -188,7 +188,7 @@ public class AnyPersonType {
         }
 
         /**
-         * Définit la valeur de la propriété residencePermit.
+         * Sets the value of the residencePermit property.
          * 
          * @param value
          *     allowed object is
@@ -204,7 +204,7 @@ public class AnyPersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété residencePermitTill.
+         * Gets the value of the residencePermitTill property.
          * 
          * @return
          *     possible object is
@@ -216,7 +216,7 @@ public class AnyPersonType {
         }
 
         /**
-         * Définit la valeur de la propriété residencePermitTill.
+         * Sets the value of the residencePermitTill property.
          * 
          * @param value
          *     allowed object is
@@ -232,7 +232,7 @@ public class AnyPersonType {
         }
 
         /**
-         * Obtient la valeur de la propriété nameOnPassport.
+         * Gets the value of the nameOnPassport property.
          * 
          * @return
          *     possible object is
@@ -244,7 +244,7 @@ public class AnyPersonType {
         }
 
         /**
-         * Définit la valeur de la propriété nameOnPassport.
+         * Sets the value of the nameOnPassport property.
          * 
          * @param value
          *     allowed object is
@@ -263,9 +263,9 @@ public class AnyPersonType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;

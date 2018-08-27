@@ -11,9 +11,9 @@ import ch.ech.xmlns.ech_0010._3.AddressInformationType;
 
 
 /**
- * <p>Classe Java pour destinationType complex type.
+ * <p>Java class for destinationType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="destinationType"&gt;
@@ -70,7 +70,7 @@ public class DestinationType {
     protected AddressInformationType mailAddress;
 
     /**
-     * Obtient la valeur de la propriété unknown.
+     * Gets the value of the unknown property.
      * 
      * @return
      *     possible object is
@@ -82,7 +82,7 @@ public class DestinationType {
     }
 
     /**
-     * Définit la valeur de la propriété unknown.
+     * Sets the value of the unknown property.
      * 
      * @param value
      *     allowed object is
@@ -98,7 +98,7 @@ public class DestinationType {
     }
 
     /**
-     * Obtient la valeur de la propriété swissTown.
+     * Gets the value of the swissTown property.
      * 
      * @return
      *     possible object is
@@ -110,7 +110,7 @@ public class DestinationType {
     }
 
     /**
-     * Définit la valeur de la propriété swissTown.
+     * Sets the value of the swissTown property.
      * 
      * @param value
      *     allowed object is
@@ -126,7 +126,7 @@ public class DestinationType {
     }
 
     /**
-     * Obtient la valeur de la propriété foreignCountry.
+     * Gets the value of the foreignCountry property.
      * 
      * @return
      *     possible object is
@@ -138,7 +138,7 @@ public class DestinationType {
     }
 
     /**
-     * Définit la valeur de la propriété foreignCountry.
+     * Sets the value of the foreignCountry property.
      * 
      * @param value
      *     allowed object is
@@ -154,7 +154,7 @@ public class DestinationType {
     }
 
     /**
-     * Obtient la valeur de la propriété mailAddress.
+     * Gets the value of the mailAddress property.
      * 
      * @return
      *     possible object is
@@ -166,7 +166,7 @@ public class DestinationType {
     }
 
     /**
-     * Définit la valeur de la propriété mailAddress.
+     * Sets the value of the mailAddress property.
      * 
      * @param value
      *     allowed object is
@@ -204,9 +204,9 @@ public class DestinationType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -243,7 +243,7 @@ public class DestinationType {
         protected String town;
 
         /**
-         * Obtient la valeur de la propriété country.
+         * Gets the value of the country property.
          * 
          * @return
          *     possible object is
@@ -255,7 +255,7 @@ public class DestinationType {
         }
 
         /**
-         * Définit la valeur de la propriété country.
+         * Sets the value of the country property.
          * 
          * @param value
          *     allowed object is
@@ -271,7 +271,7 @@ public class DestinationType {
         }
 
         /**
-         * Obtient la valeur de la propriété town.
+         * Gets the value of the town property.
          * 
          * @return
          *     possible object is
@@ -283,7 +283,7 @@ public class DestinationType {
         }
 
         /**
-         * Définit la valeur de la propriété town.
+         * Sets the value of the town property.
          * 
          * @param value
          *     allowed object is

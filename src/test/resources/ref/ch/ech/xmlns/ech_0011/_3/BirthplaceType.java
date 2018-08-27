@@ -13,9 +13,9 @@ import ch.ech.xmlns.ech_0008._2.CountryType;
 
 
 /**
- * <p>Classe Java pour birthplaceType complex type.
+ * <p>Java class for birthplaceType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="birthplaceType"&gt;
@@ -82,7 +82,7 @@ public class BirthplaceType {
     protected BirthplaceType.ForeignCountry foreignCountry;
 
     /**
-     * Obtient la valeur de la propriété unknown.
+     * Gets the value of the unknown property.
      * 
      * @return
      *     possible object is
@@ -94,7 +94,7 @@ public class BirthplaceType {
     }
 
     /**
-     * Définit la valeur de la propriété unknown.
+     * Sets the value of the unknown property.
      * 
      * @param value
      *     allowed object is
@@ -110,7 +110,7 @@ public class BirthplaceType {
     }
 
     /**
-     * Obtient la valeur de la propriété swissTown.
+     * Gets the value of the swissTown property.
      * 
      * @return
      *     possible object is
@@ -122,7 +122,7 @@ public class BirthplaceType {
     }
 
     /**
-     * Définit la valeur de la propriété swissTown.
+     * Sets the value of the swissTown property.
      * 
      * @param value
      *     allowed object is
@@ -138,7 +138,7 @@ public class BirthplaceType {
     }
 
     /**
-     * Obtient la valeur de la propriété foreignCountry.
+     * Gets the value of the foreignCountry property.
      * 
      * @return
      *     possible object is
@@ -150,7 +150,7 @@ public class BirthplaceType {
     }
 
     /**
-     * Définit la valeur de la propriété foreignCountry.
+     * Sets the value of the foreignCountry property.
      * 
      * @param value
      *     allowed object is
@@ -181,9 +181,9 @@ public class BirthplaceType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -219,7 +219,7 @@ public class BirthplaceType {
         protected String foreignBirthTown;
 
         /**
-         * Obtient la valeur de la propriété country.
+         * Gets the value of the country property.
          * 
          * @return
          *     possible object is
@@ -231,7 +231,7 @@ public class BirthplaceType {
         }
 
         /**
-         * Définit la valeur de la propriété country.
+         * Sets the value of the country property.
          * 
          * @param value
          *     allowed object is
@@ -247,7 +247,7 @@ public class BirthplaceType {
         }
 
         /**
-         * Obtient la valeur de la propriété foreignBirthTown.
+         * Gets the value of the foreignBirthTown property.
          * 
          * @return
          *     possible object is
@@ -259,7 +259,7 @@ public class BirthplaceType {
         }
 
         /**
-         * Définit la valeur de la propriété foreignBirthTown.
+         * Sets the value of the foreignBirthTown property.
          * 
          * @param value
          *     allowed object is
@@ -285,9 +285,9 @@ public class BirthplaceType {
 
 
     /**
-     * <p>Classe Java pour anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType&gt;
@@ -324,7 +324,7 @@ public class BirthplaceType {
         protected SwissMunicipalityType municipality;
 
         /**
-         * Obtient la valeur de la propriété country.
+         * Gets the value of the country property.
          * 
          * @return
          *     possible object is
@@ -336,7 +336,7 @@ public class BirthplaceType {
         }
 
         /**
-         * Définit la valeur de la propriété country.
+         * Sets the value of the country property.
          * 
          * @param value
          *     allowed object is
@@ -352,7 +352,7 @@ public class BirthplaceType {
         }
 
         /**
-         * Obtient la valeur de la propriété municipality.
+         * Gets the value of the municipality property.
          * 
          * @return
          *     possible object is
@@ -364,7 +364,7 @@ public class BirthplaceType {
         }
 
         /**
-         * Définit la valeur de la propriété municipality.
+         * Sets the value of the municipality property.
          * 
          * @param value
          *     allowed object is

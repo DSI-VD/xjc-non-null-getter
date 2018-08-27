@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour reportedPersonType complex type.
+ * <p>Java class for reportedPersonType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="reportedPersonType"&gt;
@@ -51,7 +51,7 @@ public class ReportedPersonType {
     protected OtherResidenceType hasOtherResidence;
 
     /**
-     * Obtient la valeur de la propriété person.
+     * Gets the value of the person property.
      * 
      * @return
      *     possible object is
@@ -63,7 +63,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Définit la valeur de la propriété person.
+     * Sets the value of the person property.
      * 
      * @param value
      *     allowed object is
@@ -79,7 +79,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Obtient la valeur de la propriété anyPerson.
+     * Gets the value of the anyPerson property.
      * 
      * @return
      *     possible object is
@@ -91,7 +91,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Définit la valeur de la propriété anyPerson.
+     * Sets the value of the anyPerson property.
      * 
      * @param value
      *     allowed object is
@@ -107,7 +107,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Obtient la valeur de la propriété hasMainResidence.
+     * Gets the value of the hasMainResidence property.
      * 
      * @return
      *     possible object is
@@ -119,7 +119,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Définit la valeur de la propriété hasMainResidence.
+     * Sets the value of the hasMainResidence property.
      * 
      * @param value
      *     allowed object is
@@ -135,7 +135,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Obtient la valeur de la propriété hasSecondaryResidence.
+     * Gets the value of the hasSecondaryResidence property.
      * 
      * @return
      *     possible object is
@@ -147,7 +147,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Définit la valeur de la propriété hasSecondaryResidence.
+     * Sets the value of the hasSecondaryResidence property.
      * 
      * @param value
      *     allowed object is
@@ -163,7 +163,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Obtient la valeur de la propriété hasOtherResidence.
+     * Gets the value of the hasOtherResidence property.
      * 
      * @return
      *     possible object is
@@ -175,7 +175,7 @@ public class ReportedPersonType {
     }
 
     /**
-     * Définit la valeur de la propriété hasOtherResidence.
+     * Sets the value of the hasOtherResidence property.
      * 
      * @param value
      *     allowed object is

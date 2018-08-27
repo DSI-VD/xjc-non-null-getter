@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Classe Java pour personMailAddressInfoType complex type.
+ * <p>Java class for personMailAddressInfoType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="personMailAddressInfoType"&gt;
@@ -55,7 +55,7 @@ public class PersonMailAddressInfoType {
     protected String lastName;
 
     /**
-     * Obtient la valeur de la propriété mrMrs.
+     * Gets the value of the mrMrs property.
      * 
      * @return
      *     possible object is
@@ -67,7 +67,7 @@ public class PersonMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété mrMrs.
+     * Sets the value of the mrMrs property.
      * 
      * @param value
      *     allowed object is
@@ -83,7 +83,7 @@ public class PersonMailAddressInfoType {
     }
 
     /**
-     * Obtient la valeur de la propriété title.
+     * Gets the value of the title property.
      * 
      * @return
      *     possible object is
@@ -95,7 +95,7 @@ public class PersonMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété title.
+     * Sets the value of the title property.
      * 
      * @param value
      *     allowed object is
@@ -111,7 +111,7 @@ public class PersonMailAddressInfoType {
     }
 
     /**
-     * Obtient la valeur de la propriété firstName.
+     * Gets the value of the firstName property.
      * 
      * @return
      *     possible object is
@@ -123,7 +123,7 @@ public class PersonMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété firstName.
+     * Sets the value of the firstName property.
      * 
      * @param value
      *     allowed object is
@@ -139,7 +139,7 @@ public class PersonMailAddressInfoType {
     }
 
     /**
-     * Obtient la valeur de la propriété lastName.
+     * Gets the value of the lastName property.
      * 
      * @return
      *     possible object is
@@ -151,7 +151,7 @@ public class PersonMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété lastName.
+     * Sets the value of the lastName property.
      * 
      * @param value
      *     allowed object is

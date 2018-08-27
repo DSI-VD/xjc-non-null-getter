@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Classe Java pour organisationMailAddressInfoType complex type.
+ * <p>Java class for organisationMailAddressInfoType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="organisationMailAddressInfoType"&gt;
@@ -66,7 +66,7 @@ public class OrganisationMailAddressInfoType {
     protected String lastName;
 
     /**
-     * Obtient la valeur de la propriété organisationName.
+     * Gets the value of the organisationName property.
      * 
      * @return
      *     possible object is
@@ -78,7 +78,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété organisationName.
+     * Sets the value of the organisationName property.
      * 
      * @param value
      *     allowed object is
@@ -94,7 +94,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Obtient la valeur de la propriété organisationNameAddOn1.
+     * Gets the value of the organisationNameAddOn1 property.
      * 
      * @return
      *     possible object is
@@ -106,7 +106,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété organisationNameAddOn1.
+     * Sets the value of the organisationNameAddOn1 property.
      * 
      * @param value
      *     allowed object is
@@ -122,7 +122,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Obtient la valeur de la propriété organisationNameAddOn2.
+     * Gets the value of the organisationNameAddOn2 property.
      * 
      * @return
      *     possible object is
@@ -134,7 +134,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété organisationNameAddOn2.
+     * Sets the value of the organisationNameAddOn2 property.
      * 
      * @param value
      *     allowed object is
@@ -150,7 +150,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Obtient la valeur de la propriété title.
+     * Gets the value of the title property.
      * 
      * @return
      *     possible object is
@@ -162,7 +162,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété title.
+     * Sets the value of the title property.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Obtient la valeur de la propriété firstName.
+     * Gets the value of the firstName property.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété firstName.
+     * Sets the value of the firstName property.
      * 
      * @param value
      *     allowed object is
@@ -206,7 +206,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Obtient la valeur de la propriété lastName.
+     * Gets the value of the lastName property.
      * 
      * @return
      *     possible object is
@@ -218,7 +218,7 @@ public class OrganisationMailAddressInfoType {
     }
 
     /**
-     * Définit la valeur de la propriété lastName.
+     * Sets the value of the lastName property.
      * 
      * @param value
      *     allowed object is

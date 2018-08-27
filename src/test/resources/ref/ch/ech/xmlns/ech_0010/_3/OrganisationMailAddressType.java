@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour organisationMailAddressType complex type.
+ * <p>Java class for organisationMailAddressType complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="organisationMailAddressType"&gt;
@@ -40,7 +40,7 @@ public class OrganisationMailAddressType {
     protected AddressInformationType addressInformation;
 
     /**
-     * Obtient la valeur de la propriété organisation.
+     * Gets the value of the organisation property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class OrganisationMailAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété organisation.
+     * Sets the value of the organisation property.
      * 
      * @param value
      *     allowed object is
@@ -68,7 +68,7 @@ public class OrganisationMailAddressType {
     }
 
     /**
-     * Obtient la valeur de la propriété addressInformation.
+     * Gets the value of the addressInformation property.
      * 
      * @return
      *     possible object is
@@ -80,7 +80,7 @@ public class OrganisationMailAddressType {
     }
 
     /**
-     * Définit la valeur de la propriété addressInformation.
+     * Sets the value of the addressInformation property.
      * 
      * @param value
      *     allowed object is
