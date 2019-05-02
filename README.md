@@ -50,6 +50,26 @@ In pom.xml, add the plugin:
             </plugin>
 ```
 
+For JDK11, you may add to your pom.xml :
+
+```xml
+<dependency>
+    <groupId>jakarta.xml.bind</groupId>
+    <artifactId>jakarta.xml.bind-api</artifactId>
+    <version>${jaxb.version}</version>
+</dependency>
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>jaxb-runtime</artifactId>
+    <version>${jaxb.version}</version>
+</dependency>
+
+<properties>
+     <java.version>11</java.version>
+     <jaxb.version>2.3.2</jaxb.version>
+ </properties>
+```
+
 ## Usage in Java code
 
 ```java
