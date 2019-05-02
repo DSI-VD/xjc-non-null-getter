@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shared-vd/xjc-non-null-getter.svg?branch=master)](https://travis-ci.org/shared-vd/xjc-non-null-getter)
+
 # xjc-non-null-getter
 
 Maven JAXB2 Plugin that adds getters, creating the corresponding object, and adding it to the attribute if null
