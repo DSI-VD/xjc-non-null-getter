@@ -9,7 +9,7 @@ In pom.xml, add the plugin:
             <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
                 <artifactId>maven-jaxb2-plugin</artifactId>
-                <version>0.13.2</version>
+                <version>0.14.0</version>
                 <configuration>
                     <strict>false</strict>
                     <!--
@@ -40,7 +40,7 @@ In pom.xml, add the plugin:
                         <version>${jaxb2-value-constructor.version}</version>
                     </dependency>
                     <dependency>
-                        <groupId>ch.vd.shared.jaxb-plugins</groupId>
+                        <groupId>ch.vdshared.jaxb-plugins</groupId>
                         <artifactId>xjc-non-null-getter</artifactId>
                         <version>${xjc-non-null-getter.version}</version>
                     </dependency>
