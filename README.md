@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shared-vd/xjc-non-null-getter.svg?branch=master)](https://travis-ci.org/shared-vd/xjc-non-null-getter)
+
 # xjc-non-null-getter
 
 Maven JAXB2 Plugin that adds getters, creating the corresponding object, and adding it to the attribute if null
@@ -9,7 +11,7 @@ In pom.xml, add the plugin:
             <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
                 <artifactId>maven-jaxb2-plugin</artifactId>
-                <version>0.13.2</version>
+                <version>0.14.0</version>
                 <configuration>
                     <strict>false</strict>
                     <!--
@@ -40,12 +42,32 @@ In pom.xml, add the plugin:
                         <version>${jaxb2-value-constructor.version}</version>
                     </dependency>
                     <dependency>
-                        <groupId>ch.vd.shared.jaxb-plugins</groupId>
+                        <groupId>ch.vdshared.jaxb-plugins</groupId>
                         <artifactId>xjc-non-null-getter</artifactId>
                         <version>${xjc-non-null-getter.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
+```
+
+For JDK11, you may add to your pom.xml :
+
+```xml
+<dependency>
+    <groupId>jakarta.xml.bind</groupId>
+    <artifactId>jakarta.xml.bind-api</artifactId>
+    <version>${jaxb.version}</version>
+</dependency>
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>jaxb-runtime</artifactId>
+    <version>${jaxb.version}</version>
+</dependency>
+
+<properties>
+     <java.version>11</java.version>
+     <jaxb.version>2.3.2</jaxb.version>
+ </properties>
 ```
 
 ## Usage in Java code
