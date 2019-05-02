@@ -69,7 +69,7 @@
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
-            <version>${glassfish-jaxb.version}</version>
+            <version>${jaxb.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
