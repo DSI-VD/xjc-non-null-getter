@@ -86,7 +86,7 @@ person.address().setZipCode(12345);
 
 ## Configuring Maven to push to Maven Central
 
-Create a user Token in oss.sonytype.org
+Create a user Token in oss.sonatype.org
 Go to
 
 User -> Profile -> User token -> Generate
