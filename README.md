@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/shared-vd/xjc-non-null-getter.svg?branch=master)](https://travis-ci.org/shared-vd/xjc-non-null-getter)
+[![Build Status](https://travis-ci.org/dsi-vd/xjc-non-null-getter.svg?branch=master)](https://travis-ci.org/dsi-vd/xjc-non-null-getter)
 
 # xjc-non-null-getter
 
@@ -42,7 +42,7 @@ In pom.xml, add the plugin:
                         <version>${jaxb2-value-constructor.version}</version>
                     </dependency>
                     <dependency>
-                        <groupId>ch.vdshared.jaxb-plugins</groupId>
+                        <groupId>ch.dsivd.jaxb-plugins</groupId>
                         <artifactId>xjc-non-null-getter</artifactId>
                         <version>${xjc-non-null-getter.version}</version>
                     </dependency>
