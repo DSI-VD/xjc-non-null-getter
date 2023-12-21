@@ -1,14 +1,14 @@
 
 package ch.ech.xmlns.ech_0011._3;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the ch.ech.xmlns.ech_0011._3 package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -32,6 +32,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MaritalDataType }
      * 
+     * @return
+     *     the new instance of {@link MaritalDataType }
      */
     public MaritalDataType createMaritalDataType() {
         return new MaritalDataType();
@@ -40,6 +42,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BirthplaceType }
      * 
+     * @return
+     *     the new instance of {@link BirthplaceType }
      */
     public BirthplaceType createBirthplaceType() {
         return new BirthplaceType();
@@ -48,6 +52,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DwellingAddressType }
      * 
+     * @return
+     *     the new instance of {@link DwellingAddressType }
      */
     public DwellingAddressType createDwellingAddressType() {
         return new DwellingAddressType();
@@ -56,6 +62,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DestinationType }
      * 
+     * @return
+     *     the new instance of {@link DestinationType }
      */
     public DestinationType createDestinationType() {
         return new DestinationType();
@@ -64,6 +72,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OtherResidenceType }
      * 
+     * @return
+     *     the new instance of {@link OtherResidenceType }
      */
     public OtherResidenceType createOtherResidenceType() {
         return new OtherResidenceType();
@@ -72,6 +82,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SecondaryResidenceType }
      * 
+     * @return
+     *     the new instance of {@link SecondaryResidenceType }
      */
     public SecondaryResidenceType createSecondaryResidenceType() {
         return new SecondaryResidenceType();
@@ -80,6 +92,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MainResidenceType }
      * 
+     * @return
+     *     the new instance of {@link MainResidenceType }
      */
     public MainResidenceType createMainResidenceType() {
         return new MainResidenceType();
@@ -88,6 +102,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AnyPersonType }
      * 
+     * @return
+     *     the new instance of {@link AnyPersonType }
      */
     public AnyPersonType createAnyPersonType() {
         return new AnyPersonType();
@@ -96,6 +112,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PersonType }
      * 
+     * @return
+     *     the new instance of {@link PersonType }
      */
     public PersonType createPersonType() {
         return new PersonType();
@@ -104,6 +122,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PersonType.Coredata }
      * 
+     * @return
+     *     the new instance of {@link PersonType.Coredata }
      */
     public PersonType.Coredata createPersonTypeCoredata() {
         return new PersonType.Coredata();
@@ -112,6 +132,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReportedPersonType }
      * 
+     * @return
+     *     the new instance of {@link ReportedPersonType }
      */
     public ReportedPersonType createReportedPersonType() {
         return new ReportedPersonType();
@@ -120,6 +142,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PersonRoot }
      * 
+     * @return
+     *     the new instance of {@link PersonRoot }
      */
     public PersonRoot createPersonRoot() {
         return new PersonRoot();
@@ -128,6 +152,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NationalityType }
      * 
+     * @return
+     *     the new instance of {@link NationalityType }
      */
     public NationalityType createNationalityType() {
         return new NationalityType();
@@ -136,6 +162,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PlaceOfOriginType }
      * 
+     * @return
+     *     the new instance of {@link PlaceOfOriginType }
      */
     public PlaceOfOriginType createPlaceOfOriginType() {
         return new PlaceOfOriginType();
@@ -144,6 +172,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SwissMunicipalityWithoutBFS }
      * 
+     * @return
+     *     the new instance of {@link SwissMunicipalityWithoutBFS }
      */
     public SwissMunicipalityWithoutBFS createSwissMunicipalityWithoutBFS() {
         return new SwissMunicipalityWithoutBFS();
@@ -152,6 +182,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PartnerIdOrganisationType }
      * 
+     * @return
+     *     the new instance of {@link PartnerIdOrganisationType }
      */
     public PartnerIdOrganisationType createPartnerIdOrganisationType() {
         return new PartnerIdOrganisationType();
@@ -160,6 +192,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BirthplaceType.SwissTown }
      * 
+     * @return
+     *     the new instance of {@link BirthplaceType.SwissTown }
      */
     public BirthplaceType.SwissTown createBirthplaceTypeSwissTown() {
         return new BirthplaceType.SwissTown();
@@ -168,6 +202,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BirthplaceType.ForeignCountry }
      * 
+     * @return
+     *     the new instance of {@link BirthplaceType.ForeignCountry }
      */
     public BirthplaceType.ForeignCountry createBirthplaceTypeForeignCountry() {
         return new BirthplaceType.ForeignCountry();
@@ -176,6 +212,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DwellingAddressType.WithoutEGID }
      * 
+     * @return
+     *     the new instance of {@link DwellingAddressType.WithoutEGID }
      */
     public DwellingAddressType.WithoutEGID createDwellingAddressTypeWithoutEGID() {
         return new DwellingAddressType.WithoutEGID();
@@ -184,6 +222,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DestinationType.ForeignCountry }
      * 
+     * @return
+     *     the new instance of {@link DestinationType.ForeignCountry }
      */
     public DestinationType.ForeignCountry createDestinationTypeForeignCountry() {
         return new DestinationType.ForeignCountry();
@@ -192,6 +232,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OtherResidenceType.SecondaryResidenceInformation }
      * 
+     * @return
+     *     the new instance of {@link OtherResidenceType.SecondaryResidenceInformation }
      */
     public OtherResidenceType.SecondaryResidenceInformation createOtherResidenceTypeSecondaryResidenceInformation() {
         return new OtherResidenceType.SecondaryResidenceInformation();
@@ -200,6 +242,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SecondaryResidenceType.SecondaryResidence }
      * 
+     * @return
+     *     the new instance of {@link SecondaryResidenceType.SecondaryResidence }
      */
     public SecondaryResidenceType.SecondaryResidence createSecondaryResidenceTypeSecondaryResidence() {
         return new SecondaryResidenceType.SecondaryResidence();
@@ -208,6 +252,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MainResidenceType.MainResidence }
      * 
+     * @return
+     *     the new instance of {@link MainResidenceType.MainResidence }
      */
     public MainResidenceType.MainResidence createMainResidenceTypeMainResidence() {
         return new MainResidenceType.MainResidence();
@@ -216,6 +262,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AnyPersonType.Swiss }
      * 
+     * @return
+     *     the new instance of {@link AnyPersonType.Swiss }
      */
     public AnyPersonType.Swiss createAnyPersonTypeSwiss() {
         return new AnyPersonType.Swiss();
@@ -224,6 +272,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AnyPersonType.Foreigner }
      * 
+     * @return
+     *     the new instance of {@link AnyPersonType.Foreigner }
      */
     public AnyPersonType.Foreigner createAnyPersonTypeForeigner() {
         return new AnyPersonType.Foreigner();
@@ -232,6 +282,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PersonType.Coredata.Contact }
      * 
+     * @return
+     *     the new instance of {@link PersonType.Coredata.Contact }
      */
     public PersonType.Coredata.Contact createPersonTypeCoredataContact() {
         return new PersonType.Coredata.Contact();

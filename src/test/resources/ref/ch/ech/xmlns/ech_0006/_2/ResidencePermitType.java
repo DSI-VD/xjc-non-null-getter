@@ -1,70 +1,71 @@
 
 package ch.ech.xmlns.ech_0006._2;
 
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for residencePermitType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="residencePermitType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="01"/&gt;
- *     &lt;enumeration value="0102"/&gt;
- *     &lt;enumeration value="02"/&gt;
- *     &lt;enumeration value="0201"/&gt;
- *     &lt;enumeration value="0202"/&gt;
- *     &lt;enumeration value="03"/&gt;
- *     &lt;enumeration value="0301"/&gt;
- *     &lt;enumeration value="0302"/&gt;
- *     &lt;enumeration value="04"/&gt;
- *     &lt;enumeration value="0401"/&gt;
- *     &lt;enumeration value="0402"/&gt;
- *     &lt;enumeration value="05"/&gt;
- *     &lt;enumeration value="0503"/&gt;
- *     &lt;enumeration value="06"/&gt;
- *     &lt;enumeration value="0601"/&gt;
- *     &lt;enumeration value="0602"/&gt;
- *     &lt;enumeration value="060101"/&gt;
- *     &lt;enumeration value="060201"/&gt;
- *     &lt;enumeration value="060102"/&gt;
- *     &lt;enumeration value="060202"/&gt;
- *     &lt;enumeration value="07"/&gt;
- *     &lt;enumeration value="0701"/&gt;
- *     &lt;enumeration value="0702"/&gt;
- *     &lt;enumeration value="070101"/&gt;
- *     &lt;enumeration value="070201"/&gt;
- *     &lt;enumeration value="070102"/&gt;
- *     &lt;enumeration value="070202"/&gt;
- *     &lt;enumeration value="070103"/&gt;
- *     &lt;enumeration value="070104"/&gt;
- *     &lt;enumeration value="070204"/&gt;
- *     &lt;enumeration value="070105"/&gt;
- *     &lt;enumeration value="070205"/&gt;
- *     &lt;enumeration value="070206"/&gt;
- *     &lt;enumeration value="070907"/&gt;
- *     &lt;enumeration value="08"/&gt;
- *     &lt;enumeration value="0804"/&gt;
- *     &lt;enumeration value="09"/&gt;
- *     &lt;enumeration value="0905"/&gt;
- *     &lt;enumeration value="10"/&gt;
- *     &lt;enumeration value="1006"/&gt;
- *     &lt;enumeration value="100601"/&gt;
- *     &lt;enumeration value="100602"/&gt;
- *     &lt;enumeration value="100603"/&gt;
- *     &lt;enumeration value="11"/&gt;
- *     &lt;enumeration value="1107"/&gt;
- *     &lt;enumeration value="12"/&gt;
- *     &lt;enumeration value="1208"/&gt;
- *     &lt;enumeration value="1300"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for residencePermitType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="residencePermitType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="01"/>
+ *     <enumeration value="0102"/>
+ *     <enumeration value="02"/>
+ *     <enumeration value="0201"/>
+ *     <enumeration value="0202"/>
+ *     <enumeration value="03"/>
+ *     <enumeration value="0301"/>
+ *     <enumeration value="0302"/>
+ *     <enumeration value="04"/>
+ *     <enumeration value="0401"/>
+ *     <enumeration value="0402"/>
+ *     <enumeration value="05"/>
+ *     <enumeration value="0503"/>
+ *     <enumeration value="06"/>
+ *     <enumeration value="0601"/>
+ *     <enumeration value="0602"/>
+ *     <enumeration value="060101"/>
+ *     <enumeration value="060201"/>
+ *     <enumeration value="060102"/>
+ *     <enumeration value="060202"/>
+ *     <enumeration value="07"/>
+ *     <enumeration value="0701"/>
+ *     <enumeration value="0702"/>
+ *     <enumeration value="070101"/>
+ *     <enumeration value="070201"/>
+ *     <enumeration value="070102"/>
+ *     <enumeration value="070202"/>
+ *     <enumeration value="070103"/>
+ *     <enumeration value="070104"/>
+ *     <enumeration value="070204"/>
+ *     <enumeration value="070105"/>
+ *     <enumeration value="070205"/>
+ *     <enumeration value="070206"/>
+ *     <enumeration value="070907"/>
+ *     <enumeration value="08"/>
+ *     <enumeration value="0804"/>
+ *     <enumeration value="09"/>
+ *     <enumeration value="0905"/>
+ *     <enumeration value="10"/>
+ *     <enumeration value="1006"/>
+ *     <enumeration value="100601"/>
+ *     <enumeration value="100602"/>
+ *     <enumeration value="100603"/>
+ *     <enumeration value="11"/>
+ *     <enumeration value="1107"/>
+ *     <enumeration value="12"/>
+ *     <enumeration value="1208"/>
+ *     <enumeration value="1300"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "residencePermitType")
@@ -173,10 +174,26 @@ public enum ResidencePermitType {
         value = v;
     }
 
+    /**
+     * Gets the value associated to the enum constant.
+     * 
+     * @return
+     *     The value linked to the enum.
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * Gets the enum associated to the value passed as parameter.
+     * 
+     * @param v
+     *     The value to get the enum from.
+     * @return
+     *     The enum which corresponds to the value, if it exists.
+     * @throws IllegalArgumentException
+     *     If no value matches in the enum declaration.
+     */
     public static ResidencePermitType fromValue(String v) {
         for (ResidencePermitType c: ResidencePermitType.values()) {
             if (c.value.equals(v)) {

@@ -5,7 +5,7 @@
 
     <groupId>ch.dsivd.jaxb-plugins</groupId>
     <artifactId>xjc-non-null-getter</artifactId>
-    <version>2.0.4-SNAPSHOT</version>
+    <version>3.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>JAXB2 Plugin - Non null getter</name>
@@ -31,7 +31,7 @@
             <name>Jean-Eric Cuendet</name>
             <email>jec@jesc.ch</email>
             <organization>JeSC</organization>
-            <organizationUrl>https://github.com/jecuendet</organizationUrl>
+            <organizationUrl>https://github.com/jecvdch</organizationUrl>
         </developer>
     </developers>
 
@@ -75,7 +75,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -137,11 +137,8 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
                 <configuration>
-                    <encoding>UTF-8</encoding>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
@@ -166,9 +163,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
 
-        <jaxb.version>2.3.2</jaxb.version>
+        <jaxb.version>4.0.4</jaxb.version>
     </properties>
 
 </project>

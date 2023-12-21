@@ -1,52 +1,52 @@
 
 package ch.ech.xmlns.ech_0010._3;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for addressInformationType complex type.
+ * <p>Java class for addressInformationType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="addressInformationType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="addressLine1" type="{http://www.ech.ch/xmlns/eCH-0010/3}addressLineType" minOccurs="0"/&gt;
- *         &lt;element name="addressLine2" type="{http://www.ech.ch/xmlns/eCH-0010/3}addressLineType" minOccurs="0"/&gt;
- *         &lt;sequence minOccurs="0"&gt;
- *           &lt;element name="street" type="{http://www.ech.ch/xmlns/eCH-0010/3}streetType"/&gt;
- *           &lt;element name="houseNumber" type="{http://www.ech.ch/xmlns/eCH-0010/3}houseNumberType" minOccurs="0"/&gt;
- *           &lt;element name="dwellingNumber" type="{http://www.ech.ch/xmlns/eCH-0010/3}dwellingNumberType" minOccurs="0"/&gt;
- *         &lt;/sequence&gt;
- *         &lt;sequence minOccurs="0"&gt;
- *           &lt;element name="postOfficeBoxNumber" type="{http://www.ech.ch/xmlns/eCH-0010/3}postOfficeBoxNumberType" minOccurs="0"/&gt;
- *           &lt;element name="postOfficeBoxText" type="{http://www.ech.ch/xmlns/eCH-0010/3}postOfficeBoxTextType"/&gt;
- *         &lt;/sequence&gt;
- *         &lt;element name="locality" type="{http://www.ech.ch/xmlns/eCH-0010/3}localityType" minOccurs="0"/&gt;
- *         &lt;element name="town" type="{http://www.ech.ch/xmlns/eCH-0010/3}townType"/&gt;
- *         &lt;choice&gt;
- *           &lt;sequence&gt;
- *             &lt;element name="swissZipCode" type="{http://www.ech.ch/xmlns/eCH-0010/3}swissZipCodeType"/&gt;
- *             &lt;element name="swissZipCodeAddOn" type="{http://www.ech.ch/xmlns/eCH-0010/3}swissZipCodeAddOnType" minOccurs="0"/&gt;
- *             &lt;element name="swissZipCodeId" type="{http://www.ech.ch/xmlns/eCH-0010/3}swissZipCodeIdType" minOccurs="0"/&gt;
- *           &lt;/sequence&gt;
- *           &lt;element name="foreignZipCode" type="{http://www.ech.ch/xmlns/eCH-0010/3}foreignZipCodeType"/&gt;
- *         &lt;/choice&gt;
- *         &lt;element name="country" type="{http://www.ech.ch/xmlns/eCH-0010/3}countryType"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="addressInformationType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="addressLine1" type="{http://www.ech.ch/xmlns/eCH-0010/3}addressLineType" minOccurs="0"/>
+ *         <element name="addressLine2" type="{http://www.ech.ch/xmlns/eCH-0010/3}addressLineType" minOccurs="0"/>
+ *         <sequence minOccurs="0">
+ *           <element name="street" type="{http://www.ech.ch/xmlns/eCH-0010/3}streetType"/>
+ *           <element name="houseNumber" type="{http://www.ech.ch/xmlns/eCH-0010/3}houseNumberType" minOccurs="0"/>
+ *           <element name="dwellingNumber" type="{http://www.ech.ch/xmlns/eCH-0010/3}dwellingNumberType" minOccurs="0"/>
+ *         </sequence>
+ *         <sequence minOccurs="0">
+ *           <element name="postOfficeBoxNumber" type="{http://www.ech.ch/xmlns/eCH-0010/3}postOfficeBoxNumberType" minOccurs="0"/>
+ *           <element name="postOfficeBoxText" type="{http://www.ech.ch/xmlns/eCH-0010/3}postOfficeBoxTextType"/>
+ *         </sequence>
+ *         <element name="locality" type="{http://www.ech.ch/xmlns/eCH-0010/3}localityType" minOccurs="0"/>
+ *         <element name="town" type="{http://www.ech.ch/xmlns/eCH-0010/3}townType"/>
+ *         <choice>
+ *           <sequence>
+ *             <element name="swissZipCode" type="{http://www.ech.ch/xmlns/eCH-0010/3}swissZipCodeType"/>
+ *             <element name="swissZipCodeAddOn" type="{http://www.ech.ch/xmlns/eCH-0010/3}swissZipCodeAddOnType" minOccurs="0"/>
+ *             <element name="swissZipCodeId" type="{http://www.ech.ch/xmlns/eCH-0010/3}swissZipCodeIdType" minOccurs="0"/>
+ *           </sequence>
+ *           <element name="foreignZipCode" type="{http://www.ech.ch/xmlns/eCH-0010/3}foreignZipCodeType"/>
+ *         </choice>
+ *         <element name="country" type="{http://www.ech.ch/xmlns/eCH-0010/3}countryType"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

@@ -1,31 +1,31 @@
 
 package ch.ech.xmlns.ech_0044._1;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for datePartiallyKnownType complex type.
+ * <p>Java class for datePartiallyKnownType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="datePartiallyKnownType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;choice&gt;
- *         &lt;element name="yearMonthDay" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
- *         &lt;element name="yearMonth" type="{http://www.w3.org/2001/XMLSchema}gYearMonth"/&gt;
- *         &lt;element name="year" type="{http://www.w3.org/2001/XMLSchema}gYear"/&gt;
- *       &lt;/choice&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="datePartiallyKnownType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <choice>
+ *         <element name="yearMonthDay" type="{http://www.w3.org/2001/XMLSchema}date"/>
+ *         <element name="yearMonth" type="{http://www.w3.org/2001/XMLSchema}gYearMonth"/>
+ *         <element name="year" type="{http://www.w3.org/2001/XMLSchema}gYear"/>
+ *       </choice>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

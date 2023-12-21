@@ -1,55 +1,55 @@
 
 package ch.ech.xmlns.ech_0011._3;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
 import ch.ech.xmlns.ech_0010._3.SwissAddressInformationType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for dwellingAddressType complex type.
+ * <p>Java class for dwellingAddressType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="dwellingAddressType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;choice minOccurs="0"&gt;
- *           &lt;sequence&gt;
- *             &lt;element name="EGID" type="{http://www.ech.ch/xmlns/eCH-0011/3}EGIDType"/&gt;
- *             &lt;choice minOccurs="0"&gt;
- *               &lt;element name="EWID" type="{http://www.ech.ch/xmlns/eCH-0011/3}EWIDType"/&gt;
- *               &lt;element name="householdID" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/&gt;
- *             &lt;/choice&gt;
- *           &lt;/sequence&gt;
- *           &lt;element name="withoutEGID"&gt;
- *             &lt;complexType&gt;
- *               &lt;complexContent&gt;
- *                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                   &lt;sequence&gt;
- *                     &lt;element name="householdID" type="{http://www.w3.org/2001/XMLSchema}token"/&gt;
- *                   &lt;/sequence&gt;
- *                 &lt;/restriction&gt;
- *               &lt;/complexContent&gt;
- *             &lt;/complexType&gt;
- *           &lt;/element&gt;
- *         &lt;/choice&gt;
- *         &lt;element name="address" type="{http://www.ech.ch/xmlns/eCH-0010/3}swissAddressInformationType"/&gt;
- *         &lt;element name="typeOfHousehold" type="{http://www.ech.ch/xmlns/eCH-0011/3}typeOfHouseholdType"/&gt;
- *         &lt;element name="movingDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="dwellingAddressType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <choice minOccurs="0">
+ *           <sequence>
+ *             <element name="EGID" type="{http://www.ech.ch/xmlns/eCH-0011/3}EGIDType"/>
+ *             <choice minOccurs="0">
+ *               <element name="EWID" type="{http://www.ech.ch/xmlns/eCH-0011/3}EWIDType"/>
+ *               <element name="householdID" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
+ *             </choice>
+ *           </sequence>
+ *           <element name="withoutEGID">
+ *             <complexType>
+ *               <complexContent>
+ *                 <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                   <sequence>
+ *                     <element name="householdID" type="{http://www.w3.org/2001/XMLSchema}token"/>
+ *                   </sequence>
+ *                 </restriction>
+ *               </complexContent>
+ *             </complexType>
+ *           </element>
+ *         </choice>
+ *         <element name="address" type="{http://www.ech.ch/xmlns/eCH-0010/3}swissAddressInformationType"/>
+ *         <element name="typeOfHousehold" type="{http://www.ech.ch/xmlns/eCH-0011/3}typeOfHouseholdType"/>
+ *         <element name="movingDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -295,21 +295,21 @@ public class DwellingAddressType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;sequence&gt;
-     *         &lt;element name="householdID" type="{http://www.w3.org/2001/XMLSchema}token"/&gt;
-     *       &lt;/sequence&gt;
-     *     &lt;/restriction&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <complexContent>
+     *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       <sequence>
+     *         <element name="householdID" type="{http://www.w3.org/2001/XMLSchema}token"/>
+     *       </sequence>
+     *     </restriction>
+     *   </complexContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */
