@@ -1,29 +1,30 @@
 
 package ch.ech.xmlns.ech_0011._3;
 
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for maritalStatusType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="maritalStatusType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="1"/&gt;
- *     &lt;enumeration value="2"/&gt;
- *     &lt;enumeration value="3"/&gt;
- *     &lt;enumeration value="4"/&gt;
- *     &lt;enumeration value="5"/&gt;
- *     &lt;enumeration value="6"/&gt;
- *     &lt;enumeration value="7"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for maritalStatusType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="maritalStatusType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="1"/>
+ *     <enumeration value="2"/>
+ *     <enumeration value="3"/>
+ *     <enumeration value="4"/>
+ *     <enumeration value="5"/>
+ *     <enumeration value="6"/>
+ *     <enumeration value="7"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "maritalStatusType")
@@ -50,10 +51,26 @@ public enum MaritalStatusType {
         value = v;
     }
 
+    /**
+     * Gets the value associated to the enum constant.
+     * 
+     * @return
+     *     The value linked to the enum.
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * Gets the enum associated to the value passed as parameter.
+     * 
+     * @param v
+     *     The value to get the enum from.
+     * @return
+     *     The enum which corresponds to the value, if it exists.
+     * @throws IllegalArgumentException
+     *     If no value matches in the enum declaration.
+     */
     public static MaritalStatusType fromValue(String v) {
         for (MaritalStatusType c: MaritalStatusType.values()) {
             if (c.value.equals(v)) {

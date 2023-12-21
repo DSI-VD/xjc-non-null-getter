@@ -2,72 +2,55 @@
 
 # xjc-non-null-getter
 
-Maven JAXB2 Plugin that adds getters, creating the corresponding object, and adding it to the attribute if null
+Maven JAXB2 Plugin that adds getters, creating the corresponding object, and adding it to the attribute if null.
+
+It requires Java 17.
 
 ## Usage in maven pom.xml
 
 In pom.xml, add the plugin:
 ```xml
-            <plugin>
-                <groupId>org.jvnet.jaxb2.maven2</groupId>
-                <artifactId>maven-jaxb2-plugin</artifactId>
-                <version>0.14.0</version>
-                <configuration>
-                    <strict>false</strict>
-                    <!--
-                     see https://github.com/highsource/maven-jaxb2-plugin/wiki/Catalogs-in-Strict-Mode
-                    -->
-                    <schemaDirectory>${basedir}/src/main/resources/xsd/</schemaDirectory>
-                    <generatePackage>ch.vd.cyber.backofficebe.sms</generatePackage>
-                    <schemaIncludes>
-                        <include>sms-v1.xsd</include>
-                    </schemaIncludes>
-                    <args>
-                        <arg>-extension</arg>
-                        <arg>-Xvalue-constructor</arg>
-                        <arg>-XNonNullGetter-api</arg>
-                    </args>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.jvnet.jaxb2_commons</groupId>
-                        <artifactId>jaxb2-value-constructor</artifactId>
-                        <version>${jaxb2-value-constructor.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>ch.dsivd.jaxb-plugins</groupId>
-                        <artifactId>xjc-non-null-getter</artifactId>
-                        <version>${xjc-non-null-getter.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-```
-
-For JDK11, you may add to your pom.xml :
-
-```xml
-<dependency>
-    <groupId>jakarta.xml.bind</groupId>
-    <artifactId>jakarta.xml.bind-api</artifactId>
-    <version>${jaxb.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.glassfish.jaxb</groupId>
-    <artifactId>jaxb-runtime</artifactId>
-    <version>${jaxb.version}</version>
-</dependency>
-
-<properties>
-     <java.version>11</java.version>
-     <jaxb.version>2.3.2</jaxb.version>
- </properties>
+<plugin>
+    <groupId>org.jvnet.jaxb</groupId>
+    <artifactId>jaxb-maven-plugin</artifactId>
+    <version>3.0.1</version>
+    <configuration>
+        <strict>false</strict> <!-- see https://github.com/highsource/maven-jaxb2-plugin/wiki/Catalogs-in-Strict-Mode -->
+        <schemaDirectory>src/main/resources/xsd</schemaDirectory>
+        <schemaIncludes>
+            <include>main.xsd</include>
+        </schemaIncludes>
+        <catalog>src/main/resources/catalog.xml</catalog>
+        <bindingDirectory>src/main/resources</bindingDirectory>
+        <bindingIncludes>
+            <include>bindings.xml</include>
+        </bindingIncludes>
+        <args>
+            <arg>-extension</arg>
+            <arg>-Xvalue-constructor</arg>
+            <arg>-XNonNullGetter-api</arg>
+        </args>
+    </configuration>
+    <executions>
+        <execution>
+            <goals>
+                <goal>generate</goal>
+            </goals>
+        </execution>
+    </executions>
+    <dependencies>
+        <dependency>
+            <groupId>org.jvnet.jaxb</groupId>
+            <artifactId>jaxb-plugins</artifactId>
+            <version>${jaxb-plugins.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.dsivd.jaxb-plugins</groupId>
+            <artifactId>xjc-non-null-getter</artifactId>
+            <version>${xjc-non-null-getter.version}</version>
+        </dependency>
+    </dependencies>
+</plugin>
 ```
 
 ## Usage in Java code

@@ -1,46 +1,46 @@
 
 package ch.ech.xmlns.ech_0011._3;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for maritalDataType complex type.
+ * <p>Java class for maritalDataType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="maritalDataType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="maritalStatus" type="{http://www.ech.ch/xmlns/eCH-0011/3}maritalStatusType"/&gt;
- *         &lt;element name="dateOfMaritalStatus" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
- *         &lt;element name="separation" type="{http://www.ech.ch/xmlns/eCH-0011/3}separationType" minOccurs="0"/&gt;
- *         &lt;element name="dateOfSeparation" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
- *         &lt;element name="cancelationReason" minOccurs="0"&gt;
- *           &lt;simpleType&gt;
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *               &lt;enumeration value="1"/&gt;
- *               &lt;enumeration value="2"/&gt;
- *               &lt;enumeration value="3"/&gt;
- *               &lt;enumeration value="4"/&gt;
- *               &lt;enumeration value="9"/&gt;
- *             &lt;/restriction&gt;
- *           &lt;/simpleType&gt;
- *         &lt;/element&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="maritalDataType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="maritalStatus" type="{http://www.ech.ch/xmlns/eCH-0011/3}maritalStatusType"/>
+ *         <element name="dateOfMaritalStatus" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+ *         <element name="separation" type="{http://www.ech.ch/xmlns/eCH-0011/3}separationType" minOccurs="0"/>
+ *         <element name="dateOfSeparation" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+ *         <element name="cancelationReason" minOccurs="0">
+ *           <simpleType>
+ *             <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               <enumeration value="1"/>
+ *               <enumeration value="2"/>
+ *               <enumeration value="3"/>
+ *               <enumeration value="4"/>
+ *               <enumeration value="9"/>
+ *             </restriction>
+ *           </simpleType>
+ *         </element>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -207,21 +207,20 @@ public class MaritalDataType {
 
 
     /**
-     * <p>Java class for null.
+     * <p>Java class for null</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
-     * <pre>
-     * &lt;simpleType&gt;
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
-     *     &lt;enumeration value="1"/&gt;
-     *     &lt;enumeration value="2"/&gt;
-     *     &lt;enumeration value="3"/&gt;
-     *     &lt;enumeration value="4"/&gt;
-     *     &lt;enumeration value="9"/&gt;
-     *   &lt;/restriction&gt;
-     * &lt;/simpleType&gt;
-     * </pre>
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
+     * <pre>{@code
+     * <simpleType>
+     *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+     *     <enumeration value="1"/>
+     *     <enumeration value="2"/>
+     *     <enumeration value="3"/>
+     *     <enumeration value="4"/>
+     *     <enumeration value="9"/>
+     *   </restriction>
+     * </simpleType>
+     * }</pre>
      * 
      */
     @XmlType(name = "")
@@ -244,10 +243,26 @@ public class MaritalDataType {
             value = v;
         }
 
+        /**
+         * Gets the value associated to the enum constant.
+         * 
+         * @return
+         *     The value linked to the enum.
+         */
         public String value() {
             return value;
         }
 
+        /**
+         * Gets the enum associated to the value passed as parameter.
+         * 
+         * @param v
+         *     The value to get the enum from.
+         * @return
+         *     The enum which corresponds to the value, if it exists.
+         * @throws IllegalArgumentException
+         *     If no value matches in the enum declaration.
+         */
         public static MaritalDataType.CancellationReason fromValue(String v) {
             for (MaritalDataType.CancellationReason c: MaritalDataType.CancellationReason.values()) {
                 if (c.value.equals(v)) {

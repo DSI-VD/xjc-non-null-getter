@@ -1,27 +1,28 @@
 
 package ch.ech.xmlns.ech_0008._2;
 
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for languageType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="languageType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&gt;
- *     &lt;length value="2"/&gt;
- *     &lt;enumeration value="fr"/&gt;
- *     &lt;enumeration value="it"/&gt;
- *     &lt;enumeration value="dt"/&gt;
- *     &lt;enumeration value="en"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for languageType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="languageType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}token">
+ *     <length value="2"/>
+ *     <enumeration value="fr"/>
+ *     <enumeration value="it"/>
+ *     <enumeration value="dt"/>
+ *     <enumeration value="en"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "languageType")
@@ -42,10 +43,26 @@ public enum LanguageType {
         value = v;
     }
 
+    /**
+     * Gets the value associated to the enum constant.
+     * 
+     * @return
+     *     The value linked to the enum.
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * Gets the enum associated to the value passed as parameter.
+     * 
+     * @param v
+     *     The value to get the enum from.
+     * @return
+     *     The enum which corresponds to the value, if it exists.
+     * @throws IllegalArgumentException
+     *     If no value matches in the enum declaration.
+     */
     public static LanguageType fromValue(String v) {
         for (LanguageType c: LanguageType.values()) {
             if (c.value.equals(v)) {

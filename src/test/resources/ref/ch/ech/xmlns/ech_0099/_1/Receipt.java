@@ -1,39 +1,39 @@
 
 package ch.ech.xmlns.ech_0099._1;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="eventTime" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
- *       &lt;/sequence&gt;
- *       &lt;attribute name="version" use="required"&gt;
- *         &lt;simpleType&gt;
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *             &lt;enumeration value="1.0"/&gt;
- *           &lt;/restriction&gt;
- *         &lt;/simpleType&gt;
- *       &lt;/attribute&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="eventTime" type="{http://www.w3.org/2001/XMLSchema}date"/>
+ *       </sequence>
+ *       <attribute name="version" use="required">
+ *         <simpleType>
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             <enumeration value="1.0"/>
+ *           </restriction>
+ *         </simpleType>
+ *       </attribute>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -44,14 +44,24 @@ import javax.xml.datatype.XMLGregorianCalendar;
 @XmlRootElement(name = "receipt")
 public class Receipt {
 
+    /**
+     * Zeitstempfel. Gibt den Zeitpunkt an, wann das angelieferte XML Dokument
+     *               in den Verarbeitungsprozess übertragen wurde.
+     * 
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "date")
     protected XMLGregorianCalendar eventTime;
+    /**
+     * Versionsnummer des XML Schemas, welches dieses Element beschreibt.
+     * 
+     */
     @XmlAttribute(name = "version", required = true)
     protected String version;
 
     /**
-     * Gets the value of the eventTime property.
+     * Zeitstempfel. Gibt den Zeitpunkt an, wann das angelieferte XML Dokument
+     *               in den Verarbeitungsprozess übertragen wurde.
      * 
      * @return
      *     possible object is
@@ -69,6 +79,7 @@ public class Receipt {
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
+     * @see #getEventTime()
      */
     public void setEventTime(XMLGregorianCalendar value) {
         this.eventTime = value;
@@ -79,7 +90,7 @@ public class Receipt {
     }
 
     /**
-     * Gets the value of the version property.
+     * Versionsnummer des XML Schemas, welches dieses Element beschreibt.
      * 
      * @return
      *     possible object is
@@ -97,6 +108,7 @@ public class Receipt {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getVersion()
      */
     public void setVersion(String value) {
         this.version = value;

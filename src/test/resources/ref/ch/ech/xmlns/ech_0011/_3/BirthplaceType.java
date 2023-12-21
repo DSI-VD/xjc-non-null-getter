@@ -1,70 +1,70 @@
 
 package ch.ech.xmlns.ech_0011._3;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import ch.ech.xmlns.ech_0007._3.SwissMunicipalityType;
 import ch.ech.xmlns.ech_0008._2.CountryType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for birthplaceType complex type.
+ * <p>Java class for birthplaceType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="birthplaceType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;choice&gt;
- *         &lt;element name="unknown" type="{http://www.ech.ch/xmlns/eCH-0011/3}unknownType"/&gt;
- *         &lt;element name="swissTown"&gt;
- *           &lt;complexType&gt;
- *             &lt;complexContent&gt;
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                 &lt;sequence&gt;
- *                   &lt;element name="country"&gt;
- *                     &lt;simpleType&gt;
- *                       &lt;restriction base="{http://www.ech.ch/xmlns/eCH-0010/3}countryType"&gt;
- *                         &lt;enumeration value="CH"/&gt;
- *                       &lt;/restriction&gt;
- *                     &lt;/simpleType&gt;
- *                   &lt;/element&gt;
- *                   &lt;element name="municipality" type="{http://www.ech.ch/xmlns/eCH-0007/3}swissMunicipalityType"/&gt;
- *                 &lt;/sequence&gt;
- *               &lt;/restriction&gt;
- *             &lt;/complexContent&gt;
- *           &lt;/complexType&gt;
- *         &lt;/element&gt;
- *         &lt;element name="foreignCountry"&gt;
- *           &lt;complexType&gt;
- *             &lt;complexContent&gt;
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                 &lt;sequence&gt;
- *                   &lt;element name="country" type="{http://www.ech.ch/xmlns/eCH-0008/2}countryType"/&gt;
- *                   &lt;element name="foreignBirthTown" minOccurs="0"&gt;
- *                     &lt;simpleType&gt;
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *                         &lt;whiteSpace value="collapse"/&gt;
- *                         &lt;maxLength value="100"/&gt;
- *                       &lt;/restriction&gt;
- *                     &lt;/simpleType&gt;
- *                   &lt;/element&gt;
- *                 &lt;/sequence&gt;
- *               &lt;/restriction&gt;
- *             &lt;/complexContent&gt;
- *           &lt;/complexType&gt;
- *         &lt;/element&gt;
- *       &lt;/choice&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="birthplaceType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <choice>
+ *         <element name="unknown" type="{http://www.ech.ch/xmlns/eCH-0011/3}unknownType"/>
+ *         <element name="swissTown">
+ *           <complexType>
+ *             <complexContent>
+ *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 <sequence>
+ *                   <element name="country">
+ *                     <simpleType>
+ *                       <restriction base="{http://www.ech.ch/xmlns/eCH-0010/3}countryType">
+ *                         <enumeration value="CH"/>
+ *                       </restriction>
+ *                     </simpleType>
+ *                   </element>
+ *                   <element name="municipality" type="{http://www.ech.ch/xmlns/eCH-0007/3}swissMunicipalityType"/>
+ *                 </sequence>
+ *               </restriction>
+ *             </complexContent>
+ *           </complexType>
+ *         </element>
+ *         <element name="foreignCountry">
+ *           <complexType>
+ *             <complexContent>
+ *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 <sequence>
+ *                   <element name="country" type="{http://www.ech.ch/xmlns/eCH-0008/2}countryType"/>
+ *                   <element name="foreignBirthTown" minOccurs="0">
+ *                     <simpleType>
+ *                       <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *                         <whiteSpace value="collapse"/>
+ *                         <maxLength value="100"/>
+ *                       </restriction>
+ *                     </simpleType>
+ *                   </element>
+ *                 </sequence>
+ *               </restriction>
+ *             </complexContent>
+ *           </complexType>
+ *         </element>
+ *       </choice>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -181,29 +181,29 @@ public class BirthplaceType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;sequence&gt;
-     *         &lt;element name="country" type="{http://www.ech.ch/xmlns/eCH-0008/2}countryType"/&gt;
-     *         &lt;element name="foreignBirthTown" minOccurs="0"&gt;
-     *           &lt;simpleType&gt;
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
-     *               &lt;whiteSpace value="collapse"/&gt;
-     *               &lt;maxLength value="100"/&gt;
-     *             &lt;/restriction&gt;
-     *           &lt;/simpleType&gt;
-     *         &lt;/element&gt;
-     *       &lt;/sequence&gt;
-     *     &lt;/restriction&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <complexContent>
+     *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       <sequence>
+     *         <element name="country" type="{http://www.ech.ch/xmlns/eCH-0008/2}countryType"/>
+     *         <element name="foreignBirthTown" minOccurs="0">
+     *           <simpleType>
+     *             <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+     *               <whiteSpace value="collapse"/>
+     *               <maxLength value="100"/>
+     *             </restriction>
+     *           </simpleType>
+     *         </element>
+     *       </sequence>
+     *     </restriction>
+     *   </complexContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */
@@ -285,28 +285,28 @@ public class BirthplaceType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;sequence&gt;
-     *         &lt;element name="country"&gt;
-     *           &lt;simpleType&gt;
-     *             &lt;restriction base="{http://www.ech.ch/xmlns/eCH-0010/3}countryType"&gt;
-     *               &lt;enumeration value="CH"/&gt;
-     *             &lt;/restriction&gt;
-     *           &lt;/simpleType&gt;
-     *         &lt;/element&gt;
-     *         &lt;element name="municipality" type="{http://www.ech.ch/xmlns/eCH-0007/3}swissMunicipalityType"/&gt;
-     *       &lt;/sequence&gt;
-     *     &lt;/restriction&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <complexContent>
+     *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       <sequence>
+     *         <element name="country">
+     *           <simpleType>
+     *             <restriction base="{http://www.ech.ch/xmlns/eCH-0010/3}countryType">
+     *               <enumeration value="CH"/>
+     *             </restriction>
+     *           </simpleType>
+     *         </element>
+     *         <element name="municipality" type="{http://www.ech.ch/xmlns/eCH-0007/3}swissMunicipalityType"/>
+     *       </sequence>
+     *     </restriction>
+     *   </complexContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */

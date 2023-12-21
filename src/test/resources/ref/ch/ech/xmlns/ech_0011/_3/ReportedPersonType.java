@@ -1,34 +1,34 @@
 
 package ch.ech.xmlns.ech_0011._3;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for reportedPersonType complex type.
+ * <p>Java class for reportedPersonType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="reportedPersonType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="person" type="{http://www.ech.ch/xmlns/eCH-0011/3}personType"/&gt;
- *         &lt;element name="anyPerson" type="{http://www.ech.ch/xmlns/eCH-0011/3}anyPersonType"/&gt;
- *         &lt;choice&gt;
- *           &lt;element name="hasMainResidence" type="{http://www.ech.ch/xmlns/eCH-0011/3}mainResidenceType"/&gt;
- *           &lt;element name="hasSecondaryResidence" type="{http://www.ech.ch/xmlns/eCH-0011/3}secondaryResidenceType"/&gt;
- *           &lt;element name="hasOtherResidence" type="{http://www.ech.ch/xmlns/eCH-0011/3}otherResidenceType"/&gt;
- *         &lt;/choice&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="reportedPersonType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="person" type="{http://www.ech.ch/xmlns/eCH-0011/3}personType"/>
+ *         <element name="anyPerson" type="{http://www.ech.ch/xmlns/eCH-0011/3}anyPersonType"/>
+ *         <choice>
+ *           <element name="hasMainResidence" type="{http://www.ech.ch/xmlns/eCH-0011/3}mainResidenceType"/>
+ *           <element name="hasSecondaryResidence" type="{http://www.ech.ch/xmlns/eCH-0011/3}secondaryResidenceType"/>
+ *           <element name="hasOtherResidence" type="{http://www.ech.ch/xmlns/eCH-0011/3}otherResidenceType"/>
+ *         </choice>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

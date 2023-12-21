@@ -1,34 +1,34 @@
 
 package ch.ech.xmlns.ech_0010._3;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for personMailAddressInfoType complex type.
+ * <p>Java class for personMailAddressInfoType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="personMailAddressInfoType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="mrMrs" type="{http://www.ech.ch/xmlns/eCH-0010/3}mrMrsType" minOccurs="0"/&gt;
- *         &lt;element name="title" type="{http://www.ech.ch/xmlns/eCH-0010/3}titleType" minOccurs="0"/&gt;
- *         &lt;element name="firstName" type="{http://www.ech.ch/xmlns/eCH-0010/3}firstNameType" minOccurs="0"/&gt;
- *         &lt;element name="lastName" type="{http://www.ech.ch/xmlns/eCH-0010/3}lastNameType"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="personMailAddressInfoType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="mrMrs" type="{http://www.ech.ch/xmlns/eCH-0010/3}mrMrsType" minOccurs="0"/>
+ *         <element name="title" type="{http://www.ech.ch/xmlns/eCH-0010/3}titleType" minOccurs="0"/>
+ *         <element name="firstName" type="{http://www.ech.ch/xmlns/eCH-0010/3}firstNameType" minOccurs="0"/>
+ *         <element name="lastName" type="{http://www.ech.ch/xmlns/eCH-0010/3}lastNameType"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

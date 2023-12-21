@@ -1,29 +1,29 @@
 
 package ch.ech.xmlns.ech_0099._1;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for errorInfoType complex type.
+ * <p>Java class for errorInfoType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="errorInfoType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="code" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="text" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="errorInfoType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="code" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         <element name="text" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -34,13 +34,24 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ErrorInfoType {
 
+    /**
+     * Nummerischer Code des Fehlers. Der Wertebereich und die Bedeutung 
+     *             dieser Codes sind in einem anderen Dokument spezifiziert.
+     * 
+     */
     @XmlElement(required = true)
     protected String code;
+    /**
+     * Textuelle Beschreibung des Fehlers. Die Bedeutung ist in einem anderen 
+     *             Dokument spezifiziert.
+     * 
+     */
     @XmlElement(required = true)
     protected String text;
 
     /**
-     * Gets the value of the code property.
+     * Nummerischer Code des Fehlers. Der Wertebereich und die Bedeutung 
+     *             dieser Codes sind in einem anderen Dokument spezifiziert.
      * 
      * @return
      *     possible object is
@@ -58,6 +69,7 @@ public class ErrorInfoType {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getCode()
      */
     public void setCode(String value) {
         this.code = value;
@@ -68,7 +80,8 @@ public class ErrorInfoType {
     }
 
     /**
-     * Gets the value of the text property.
+     * Textuelle Beschreibung des Fehlers. Die Bedeutung ist in einem anderen 
+     *             Dokument spezifiziert.
      * 
      * @return
      *     possible object is
@@ -86,6 +99,7 @@ public class ErrorInfoType {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getText()
      */
     public void setText(String value) {
         this.text = value;

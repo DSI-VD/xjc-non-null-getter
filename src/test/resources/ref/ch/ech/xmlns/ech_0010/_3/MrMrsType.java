@@ -1,25 +1,26 @@
 
 package ch.ech.xmlns.ech_0010._3;
 
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for mrMrsType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="mrMrsType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&gt;
- *     &lt;enumeration value="1"/&gt;
- *     &lt;enumeration value="2"/&gt;
- *     &lt;enumeration value="3"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for mrMrsType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="mrMrsType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}token">
+ *     <enumeration value="1"/>
+ *     <enumeration value="2"/>
+ *     <enumeration value="3"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "mrMrsType")
@@ -38,10 +39,26 @@ public enum MrMrsType {
         value = v;
     }
 
+    /**
+     * Gets the value associated to the enum constant.
+     * 
+     * @return
+     *     The value linked to the enum.
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * Gets the enum associated to the value passed as parameter.
+     * 
+     * @param v
+     *     The value to get the enum from.
+     * @return
+     *     The enum which corresponds to the value, if it exists.
+     * @throws IllegalArgumentException
+     *     If no value matches in the enum declaration.
+     */
     public static MrMrsType fromValue(String v) {
         for (MrMrsType c: MrMrsType.values()) {
             if (c.value.equals(v)) {

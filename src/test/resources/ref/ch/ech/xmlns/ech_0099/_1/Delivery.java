@@ -3,38 +3,38 @@ package ch.ech.xmlns.ech_0099._1;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 import ch.ech.xmlns.ech_0011._3.ReportedPersonType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="reportedPerson" type="{http://www.ech.ch/xmlns/eCH-0011/3}reportedPersonType" maxOccurs="unbounded"/&gt;
- *       &lt;/sequence&gt;
- *       &lt;attribute name="version" use="required"&gt;
- *         &lt;simpleType&gt;
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *             &lt;enumeration value="1.1"/&gt;
- *           &lt;/restriction&gt;
- *         &lt;/simpleType&gt;
- *       &lt;/attribute&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="reportedPerson" type="{http://www.ech.ch/xmlns/eCH-0011/3}reportedPersonType" maxOccurs="unbounded"/>
+ *       </sequence>
+ *       <attribute name="version" use="required">
+ *         <simpleType>
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             <enumeration value="1.1"/>
+ *           </restriction>
+ *         </simpleType>
+ *       </attribute>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -47,34 +47,41 @@ public class Delivery {
 
     @XmlElement(required = true)
     protected List<ReportedPersonType> reportedPerson;
+    /**
+     * Versionsnummer des XML Schemas, welches dieses Element beschreibt.
+     * 
+     */
     @XmlAttribute(name = "version", required = true)
     protected String version;
 
     /**
      * Gets the value of the reportedPerson property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the reportedPerson property.
+     * This is why there is not a <CODE>set</CODE> method for the reportedPerson property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getReportedPerson().add(newItem);
+     * getReportedPerson().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ReportedPersonType }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the reportedPerson property.
      */
     public List<ReportedPersonType> getReportedPerson() {
         if (reportedPerson == null) {
-            reportedPerson = new ArrayList<ReportedPersonType>();
+            reportedPerson = new ArrayList<>();
         }
         return this.reportedPerson;
     }
@@ -88,7 +95,7 @@ public class Delivery {
     }
 
     /**
-     * Gets the value of the version property.
+     * Versionsnummer des XML Schemas, welches dieses Element beschreibt.
      * 
      * @return
      *     possible object is
@@ -106,6 +113,7 @@ public class Delivery {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getVersion()
      */
     public void setVersion(String value) {
         this.version = value;
