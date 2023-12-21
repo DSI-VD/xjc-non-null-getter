@@ -1,36 +1,36 @@
 
 package ch.ech.xmlns.ech_0006._2;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="residencePermitCategory" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitCategoryType" minOccurs="0"/&gt;
- *         &lt;element name="residencePermitRuling" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitRulingType" minOccurs="0"/&gt;
- *         &lt;element name="residencePermitBorder" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitBorderType" minOccurs="0"/&gt;
- *         &lt;element name="residencePermitShortType" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitShortType" minOccurs="0"/&gt;
- *         &lt;element name="residencePermit" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitType" minOccurs="0"/&gt;
- *         &lt;element name="inhabitantControl" type="{http://www.ech.ch/xmlns/eCH-0006/2}inhabitantControlType" minOccurs="0"/&gt;
- *         &lt;element name="residencePermitDetailedType" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitDetailedType" minOccurs="0"/&gt;
- *         &lt;element name="residencePermitToBeRegisteredType" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitToBeRegisteredType" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="residencePermitCategory" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitCategoryType" minOccurs="0"/>
+ *         <element name="residencePermitRuling" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitRulingType" minOccurs="0"/>
+ *         <element name="residencePermitBorder" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitBorderType" minOccurs="0"/>
+ *         <element name="residencePermitShortType" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitShortType" minOccurs="0"/>
+ *         <element name="residencePermit" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitType" minOccurs="0"/>
+ *         <element name="inhabitantControl" type="{http://www.ech.ch/xmlns/eCH-0006/2}inhabitantControlType" minOccurs="0"/>
+ *         <element name="residencePermitDetailedType" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitDetailedType" minOccurs="0"/>
+ *         <element name="residencePermitToBeRegisteredType" type="{http://www.ech.ch/xmlns/eCH-0006/2}residencePermitToBeRegisteredType" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

@@ -1,32 +1,32 @@
 
 package ch.ech.xmlns.ech_0010._3;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for mailAddressType complex type.
+ * <p>Java class for mailAddressType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="mailAddressType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;choice&gt;
- *           &lt;element name="organisation" type="{http://www.ech.ch/xmlns/eCH-0010/3}organisationMailAddressInfoType"/&gt;
- *           &lt;element name="person" type="{http://www.ech.ch/xmlns/eCH-0010/3}personMailAddressInfoType"/&gt;
- *         &lt;/choice&gt;
- *         &lt;element name="addressInformation" type="{http://www.ech.ch/xmlns/eCH-0010/3}addressInformationType"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="mailAddressType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <choice>
+ *           <element name="organisation" type="{http://www.ech.ch/xmlns/eCH-0010/3}organisationMailAddressInfoType"/>
+ *           <element name="person" type="{http://www.ech.ch/xmlns/eCH-0010/3}personMailAddressInfoType"/>
+ *         </choice>
+ *         <element name="addressInformation" type="{http://www.ech.ch/xmlns/eCH-0010/3}addressInformationType"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

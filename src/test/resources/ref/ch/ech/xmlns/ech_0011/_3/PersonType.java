@@ -1,72 +1,72 @@
 
 package ch.ech.xmlns.ech_0011._3;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
 import ch.ech.xmlns.ech_0010._3.MailAddressType;
 import ch.ech.xmlns.ech_0044._1.PersonIdentificationPartnerType;
 import ch.ech.xmlns.ech_0044._1.PersonIdentificationType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for personType complex type.
+ * <p>Java class for personType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="personType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/&gt;
- *         &lt;element name="coredata"&gt;
- *           &lt;complexType&gt;
- *             &lt;complexContent&gt;
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                 &lt;sequence&gt;
- *                   &lt;element name="originalName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
- *                   &lt;element name="alliancePartnershipName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
- *                   &lt;element name="aliasName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
- *                   &lt;element name="otherName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
- *                   &lt;element name="callName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
- *                   &lt;element name="placeOfBirth" type="{http://www.ech.ch/xmlns/eCH-0011/3}birthplaceType"/&gt;
- *                   &lt;element name="dateOfDeath" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
- *                   &lt;element name="maritalData" type="{http://www.ech.ch/xmlns/eCH-0011/3}maritalDataType"/&gt;
- *                   &lt;element name="nationality" type="{http://www.ech.ch/xmlns/eCH-0011/3}nationalityType"/&gt;
- *                   &lt;element name="contact" minOccurs="0"&gt;
- *                     &lt;complexType&gt;
- *                       &lt;complexContent&gt;
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                           &lt;sequence&gt;
- *                             &lt;choice minOccurs="0"&gt;
- *                               &lt;element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/&gt;
- *                               &lt;element name="personIdentificationPartner" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationPartnerType"/&gt;
- *                               &lt;element name="partnerIdOrgnisation" type="{http://www.ech.ch/xmlns/eCH-0011/3}partnerIdOrganisationType"/&gt;
- *                             &lt;/choice&gt;
- *                             &lt;element name="contactAddress" type="{http://www.ech.ch/xmlns/eCH-0010/3}mailAddressType"/&gt;
- *                           &lt;/sequence&gt;
- *                         &lt;/restriction&gt;
- *                       &lt;/complexContent&gt;
- *                     &lt;/complexType&gt;
- *                   &lt;/element&gt;
- *                   &lt;element name="languageOfCorrespondance" type="{http://www.ech.ch/xmlns/eCH-0011/3}languageType" minOccurs="0"/&gt;
- *                   &lt;element name="religion" type="{http://www.ech.ch/xmlns/eCH-0011/3}religionType"/&gt;
- *                 &lt;/sequence&gt;
- *               &lt;/restriction&gt;
- *             &lt;/complexContent&gt;
- *           &lt;/complexType&gt;
- *         &lt;/element&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="personType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/>
+ *         <element name="coredata">
+ *           <complexType>
+ *             <complexContent>
+ *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 <sequence>
+ *                   <element name="originalName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+ *                   <element name="alliancePartnershipName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+ *                   <element name="aliasName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+ *                   <element name="otherName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+ *                   <element name="callName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+ *                   <element name="placeOfBirth" type="{http://www.ech.ch/xmlns/eCH-0011/3}birthplaceType"/>
+ *                   <element name="dateOfDeath" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+ *                   <element name="maritalData" type="{http://www.ech.ch/xmlns/eCH-0011/3}maritalDataType"/>
+ *                   <element name="nationality" type="{http://www.ech.ch/xmlns/eCH-0011/3}nationalityType"/>
+ *                   <element name="contact" minOccurs="0">
+ *                     <complexType>
+ *                       <complexContent>
+ *                         <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           <sequence>
+ *                             <choice minOccurs="0">
+ *                               <element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/>
+ *                               <element name="personIdentificationPartner" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationPartnerType"/>
+ *                               <element name="partnerIdOrgnisation" type="{http://www.ech.ch/xmlns/eCH-0011/3}partnerIdOrganisationType"/>
+ *                             </choice>
+ *                             <element name="contactAddress" type="{http://www.ech.ch/xmlns/eCH-0010/3}mailAddressType"/>
+ *                           </sequence>
+ *                         </restriction>
+ *                       </complexContent>
+ *                     </complexType>
+ *                   </element>
+ *                   <element name="languageOfCorrespondance" type="{http://www.ech.ch/xmlns/eCH-0011/3}languageType" minOccurs="0"/>
+ *                   <element name="religion" type="{http://www.ech.ch/xmlns/eCH-0011/3}religionType"/>
+ *                 </sequence>
+ *               </restriction>
+ *             </complexContent>
+ *           </complexType>
+ *         </element>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -154,47 +154,47 @@ public class PersonType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;sequence&gt;
-     *         &lt;element name="originalName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
-     *         &lt;element name="alliancePartnershipName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
-     *         &lt;element name="aliasName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
-     *         &lt;element name="otherName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
-     *         &lt;element name="callName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/&gt;
-     *         &lt;element name="placeOfBirth" type="{http://www.ech.ch/xmlns/eCH-0011/3}birthplaceType"/&gt;
-     *         &lt;element name="dateOfDeath" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
-     *         &lt;element name="maritalData" type="{http://www.ech.ch/xmlns/eCH-0011/3}maritalDataType"/&gt;
-     *         &lt;element name="nationality" type="{http://www.ech.ch/xmlns/eCH-0011/3}nationalityType"/&gt;
-     *         &lt;element name="contact" minOccurs="0"&gt;
-     *           &lt;complexType&gt;
-     *             &lt;complexContent&gt;
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *                 &lt;sequence&gt;
-     *                   &lt;choice minOccurs="0"&gt;
-     *                     &lt;element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/&gt;
-     *                     &lt;element name="personIdentificationPartner" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationPartnerType"/&gt;
-     *                     &lt;element name="partnerIdOrgnisation" type="{http://www.ech.ch/xmlns/eCH-0011/3}partnerIdOrganisationType"/&gt;
-     *                   &lt;/choice&gt;
-     *                   &lt;element name="contactAddress" type="{http://www.ech.ch/xmlns/eCH-0010/3}mailAddressType"/&gt;
-     *                 &lt;/sequence&gt;
-     *               &lt;/restriction&gt;
-     *             &lt;/complexContent&gt;
-     *           &lt;/complexType&gt;
-     *         &lt;/element&gt;
-     *         &lt;element name="languageOfCorrespondance" type="{http://www.ech.ch/xmlns/eCH-0011/3}languageType" minOccurs="0"/&gt;
-     *         &lt;element name="religion" type="{http://www.ech.ch/xmlns/eCH-0011/3}religionType"/&gt;
-     *       &lt;/sequence&gt;
-     *     &lt;/restriction&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <complexContent>
+     *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       <sequence>
+     *         <element name="originalName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+     *         <element name="alliancePartnershipName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+     *         <element name="aliasName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+     *         <element name="otherName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+     *         <element name="callName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType" minOccurs="0"/>
+     *         <element name="placeOfBirth" type="{http://www.ech.ch/xmlns/eCH-0011/3}birthplaceType"/>
+     *         <element name="dateOfDeath" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+     *         <element name="maritalData" type="{http://www.ech.ch/xmlns/eCH-0011/3}maritalDataType"/>
+     *         <element name="nationality" type="{http://www.ech.ch/xmlns/eCH-0011/3}nationalityType"/>
+     *         <element name="contact" minOccurs="0">
+     *           <complexType>
+     *             <complexContent>
+     *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 <sequence>
+     *                   <choice minOccurs="0">
+     *                     <element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/>
+     *                     <element name="personIdentificationPartner" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationPartnerType"/>
+     *                     <element name="partnerIdOrgnisation" type="{http://www.ech.ch/xmlns/eCH-0011/3}partnerIdOrganisationType"/>
+     *                   </choice>
+     *                   <element name="contactAddress" type="{http://www.ech.ch/xmlns/eCH-0010/3}mailAddressType"/>
+     *                 </sequence>
+     *               </restriction>
+     *             </complexContent>
+     *           </complexType>
+     *         </element>
+     *         <element name="languageOfCorrespondance" type="{http://www.ech.ch/xmlns/eCH-0011/3}languageType" minOccurs="0"/>
+     *         <element name="religion" type="{http://www.ech.ch/xmlns/eCH-0011/3}religionType"/>
+     *       </sequence>
+     *     </restriction>
+     *   </complexContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */
@@ -611,26 +611,26 @@ public class PersonType {
 
 
         /**
-         * <p>Java class for anonymous complex type.
+         * <p>Java class for anonymous complex type</p>.
          * 
-         * <p>The following schema fragment specifies the expected content contained within this class.
+         * <p>The following schema fragment specifies the expected content contained within this class.</p>
          * 
-         * <pre>
-         * &lt;complexType&gt;
-         *   &lt;complexContent&gt;
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-         *       &lt;sequence&gt;
-         *         &lt;choice minOccurs="0"&gt;
-         *           &lt;element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/&gt;
-         *           &lt;element name="personIdentificationPartner" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationPartnerType"/&gt;
-         *           &lt;element name="partnerIdOrgnisation" type="{http://www.ech.ch/xmlns/eCH-0011/3}partnerIdOrganisationType"/&gt;
-         *         &lt;/choice&gt;
-         *         &lt;element name="contactAddress" type="{http://www.ech.ch/xmlns/eCH-0010/3}mailAddressType"/&gt;
-         *       &lt;/sequence&gt;
-         *     &lt;/restriction&gt;
-         *   &lt;/complexContent&gt;
-         * &lt;/complexType&gt;
-         * </pre>
+         * <pre>{@code
+         * <complexType>
+         *   <complexContent>
+         *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       <sequence>
+         *         <choice minOccurs="0">
+         *           <element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/>
+         *           <element name="personIdentificationPartner" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationPartnerType"/>
+         *           <element name="partnerIdOrgnisation" type="{http://www.ech.ch/xmlns/eCH-0011/3}partnerIdOrganisationType"/>
+         *         </choice>
+         *         <element name="contactAddress" type="{http://www.ech.ch/xmlns/eCH-0010/3}mailAddressType"/>
+         *       </sequence>
+         *     </restriction>
+         *   </complexContent>
+         * </complexType>
+         * }</pre>
          * 
          * 
          */

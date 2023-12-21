@@ -1,31 +1,32 @@
 
 package ch.ech.xmlns.ech_0006._2;
 
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for residencePermitRulingType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="residencePermitRulingType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="01"/&gt;
- *     &lt;enumeration value="02"/&gt;
- *     &lt;enumeration value="03"/&gt;
- *     &lt;enumeration value="04"/&gt;
- *     &lt;enumeration value="05"/&gt;
- *     &lt;enumeration value="06"/&gt;
- *     &lt;enumeration value="07"/&gt;
- *     &lt;enumeration value="08"/&gt;
- *     &lt;enumeration value="09"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for residencePermitRulingType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="residencePermitRulingType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="01"/>
+ *     <enumeration value="02"/>
+ *     <enumeration value="03"/>
+ *     <enumeration value="04"/>
+ *     <enumeration value="05"/>
+ *     <enumeration value="06"/>
+ *     <enumeration value="07"/>
+ *     <enumeration value="08"/>
+ *     <enumeration value="09"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "residencePermitRulingType")
@@ -56,10 +57,26 @@ public enum ResidencePermitRulingType {
         value = v;
     }
 
+    /**
+     * Gets the value associated to the enum constant.
+     * 
+     * @return
+     *     The value linked to the enum.
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * Gets the enum associated to the value passed as parameter.
+     * 
+     * @param v
+     *     The value to get the enum from.
+     * @return
+     *     The enum which corresponds to the value, if it exists.
+     * @throws IllegalArgumentException
+     *     If no value matches in the enum declaration.
+     */
     public static ResidencePermitRulingType fromValue(String v) {
         for (ResidencePermitRulingType c: ResidencePermitRulingType.values()) {
             if (c.value.equals(v)) {

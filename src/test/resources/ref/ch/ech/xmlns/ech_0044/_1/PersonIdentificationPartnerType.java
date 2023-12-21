@@ -3,44 +3,44 @@ package ch.ech.xmlns.ech_0044._1;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for personIdentificationPartnerType complex type.
+ * <p>Java class for personIdentificationPartnerType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="personIdentificationPartnerType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="vn" type="{http://www.ech.ch/xmlns/eCH-0044/1}vnType" minOccurs="0"/&gt;
- *         &lt;element name="localPersonId" type="{http://www.ech.ch/xmlns/eCH-0044/1}namedPersonIdType"/&gt;
- *         &lt;element name="OtherPersonId" maxOccurs="unbounded" minOccurs="0"&gt;
- *           &lt;complexType&gt;
- *             &lt;complexContent&gt;
- *               &lt;extension base="{http://www.ech.ch/xmlns/eCH-0044/1}namedPersonIdType"&gt;
- *               &lt;/extension&gt;
- *             &lt;/complexContent&gt;
- *           &lt;/complexType&gt;
- *         &lt;/element&gt;
- *         &lt;element name="officialName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType"/&gt;
- *         &lt;element name="firstName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType"/&gt;
- *         &lt;element name="sex" type="{http://www.ech.ch/xmlns/eCH-0044/1}sexType" minOccurs="0"/&gt;
- *         &lt;element name="dateOfBirth" type="{http://www.ech.ch/xmlns/eCH-0044/1}datePartiallyKnownType" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="personIdentificationPartnerType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="vn" type="{http://www.ech.ch/xmlns/eCH-0044/1}vnType" minOccurs="0"/>
+ *         <element name="localPersonId" type="{http://www.ech.ch/xmlns/eCH-0044/1}namedPersonIdType"/>
+ *         <element name="OtherPersonId" maxOccurs="unbounded" minOccurs="0">
+ *           <complexType>
+ *             <complexContent>
+ *               <extension base="{http://www.ech.ch/xmlns/eCH-0044/1}namedPersonIdType">
+ *               </extension>
+ *             </complexContent>
+ *           </complexType>
+ *         </element>
+ *         <element name="officialName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType"/>
+ *         <element name="firstName" type="{http://www.ech.ch/xmlns/eCH-0044/1}baseNameType"/>
+ *         <element name="sex" type="{http://www.ech.ch/xmlns/eCH-0044/1}sexType" minOccurs="0"/>
+ *         <element name="dateOfBirth" type="{http://www.ech.ch/xmlns/eCH-0044/1}datePartiallyKnownType" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -133,28 +133,31 @@ public class PersonIdentificationPartnerType {
     /**
      * Gets the value of the otherPersonId property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the otherPersonId property.
+     * This is why there is not a <CODE>set</CODE> method for the otherPersonId property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getOtherPersonId().add(newItem);
+     * getOtherPersonId().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link PersonIdentificationPartnerType.OtherPersonId }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the otherPersonId property.
      */
     public List<PersonIdentificationPartnerType.OtherPersonId> getOtherPersonId() {
         if (otherPersonId == null) {
-            otherPersonId = new ArrayList<PersonIdentificationPartnerType.OtherPersonId>();
+            otherPersonId = new ArrayList<>();
         }
         return this.otherPersonId;
     }
@@ -301,18 +304,18 @@ public class PersonIdentificationPartnerType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;extension base="{http://www.ech.ch/xmlns/eCH-0044/1}namedPersonIdType"&gt;
-     *     &lt;/extension&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <complexContent>
+     *     <extension base="{http://www.ech.ch/xmlns/eCH-0044/1}namedPersonIdType">
+     *     </extension>
+     *   </complexContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */

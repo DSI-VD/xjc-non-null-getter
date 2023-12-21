@@ -3,67 +3,65 @@ package ch.ech.xmlns.ech_0099._1;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
 import ch.ech.xmlns.ech_0044._1.PersonIdentificationType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * 
- *         Elemente dieses Typs sind die vom Bundesamt für Statistik im Fall der Validierung
+ * Elemente dieses Typs sind die vom Bundesamt für Statistik im Fall der Validierung
  *         sowie Lieferung an die Statistik gelieferten Resultate.
- *       
  * 
- * <p>Java class for validationReportType complex type.
+ * <p>Java class for validationReportType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="validationReportType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="generalError" type="{http://www.ech.ch/xmlns/eCH-0099/1}errorInfoType" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element name="personError" maxOccurs="unbounded" minOccurs="0"&gt;
- *           &lt;complexType&gt;
- *             &lt;complexContent&gt;
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                 &lt;sequence&gt;
- *                   &lt;element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/&gt;
- *                   &lt;element name="errorInfo" type="{http://www.ech.ch/xmlns/eCH-0099/1}errorInfoType" maxOccurs="unbounded"/&gt;
- *                 &lt;/sequence&gt;
- *               &lt;/restriction&gt;
- *             &lt;/complexContent&gt;
- *           &lt;/complexType&gt;
- *         &lt;/element&gt;
- *         &lt;element name="egidAttribution" maxOccurs="unbounded" minOccurs="0"&gt;
- *           &lt;complexType&gt;
- *             &lt;complexContent&gt;
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                 &lt;sequence&gt;
- *                   &lt;element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/&gt;
- *                   &lt;element name="EGID" type="{http://www.ech.ch/xmlns/eCH-0011/3}EGIDType"/&gt;
- *                 &lt;/sequence&gt;
- *               &lt;/restriction&gt;
- *             &lt;/complexContent&gt;
- *           &lt;/complexType&gt;
- *         &lt;/element&gt;
- *       &lt;/sequence&gt;
- *       &lt;attribute name="version" use="required"&gt;
- *         &lt;simpleType&gt;
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *             &lt;enumeration value="1.0"/&gt;
- *           &lt;/restriction&gt;
- *         &lt;/simpleType&gt;
- *       &lt;/attribute&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="validationReportType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="generalError" type="{http://www.ech.ch/xmlns/eCH-0099/1}errorInfoType" maxOccurs="unbounded" minOccurs="0"/>
+ *         <element name="personError" maxOccurs="unbounded" minOccurs="0">
+ *           <complexType>
+ *             <complexContent>
+ *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 <sequence>
+ *                   <element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/>
+ *                   <element name="errorInfo" type="{http://www.ech.ch/xmlns/eCH-0099/1}errorInfoType" maxOccurs="unbounded"/>
+ *                 </sequence>
+ *               </restriction>
+ *             </complexContent>
+ *           </complexType>
+ *         </element>
+ *         <element name="egidAttribution" maxOccurs="unbounded" minOccurs="0">
+ *           <complexType>
+ *             <complexContent>
+ *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 <sequence>
+ *                   <element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/>
+ *                   <element name="EGID" type="{http://www.ech.ch/xmlns/eCH-0011/3}EGIDType"/>
+ *                 </sequence>
+ *               </restriction>
+ *             </complexContent>
+ *           </complexType>
+ *         </element>
+ *       </sequence>
+ *       <attribute name="version" use="required">
+ *         <simpleType>
+ *           <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             <enumeration value="1.0"/>
+ *           </restriction>
+ *         </simpleType>
+ *       </attribute>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -75,37 +73,65 @@ import ch.ech.xmlns.ech_0044._1.PersonIdentificationType;
 })
 public class ValidationReportType {
 
+    /**
+     * Auflistung der allgemeinen Fehler, die in dem angelieferten XML 
+     *             Dokument gefunden wurden. Allgemeine Fehler beziehen sich nicht
+     *             auf eine Person, sondern auf das angelieferte XML Dokument im Ganzen.
+     * 
+     */
     protected List<ErrorInfoType> generalError;
+    /**
+     * Auflistung der personenbezogenen Fehler, die in dem angelieferten XML 
+     *             Dokument gefunden wurden. Personenbezogene Fehler beziehen sich auf
+     *             eine konkrete Person.
+     * 
+     */
     protected List<ValidationReportType.PersonError> personError;
+    /**
+     * Zuteilung eines Gebäudeidentifikators (EGID) zu einer Person, deren
+     *             Daten in dem angelieferten XML Dokument gefunden wurden.
+     * 
+     */
     protected List<ValidationReportType.EgidAttribution> egidAttribution;
+    /**
+     * Versionsnummer des XML Schemas, welches dieses Element beschreibt.
+     * 
+     */
     @XmlAttribute(name = "version", required = true)
     protected String version;
 
     /**
+     * Auflistung der allgemeinen Fehler, die in dem angelieferten XML 
+     *             Dokument gefunden wurden. Allgemeine Fehler beziehen sich nicht
+     *             auf eine Person, sondern auf das angelieferte XML Dokument im Ganzen.
+     * 
      * Gets the value of the generalError property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the generalError property.
+     * This is why there is not a <CODE>set</CODE> method for the generalError property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getGeneralError().add(newItem);
+     * getGeneralError().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ErrorInfoType }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the generalError property.
      */
     public List<ErrorInfoType> getGeneralError() {
         if (generalError == null) {
-            generalError = new ArrayList<ErrorInfoType>();
+            generalError = new ArrayList<>();
         }
         return this.generalError;
     }
@@ -119,30 +145,37 @@ public class ValidationReportType {
     }
 
     /**
+     * Auflistung der personenbezogenen Fehler, die in dem angelieferten XML 
+     *             Dokument gefunden wurden. Personenbezogene Fehler beziehen sich auf
+     *             eine konkrete Person.
+     * 
      * Gets the value of the personError property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the personError property.
+     * This is why there is not a <CODE>set</CODE> method for the personError property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getPersonError().add(newItem);
+     * getPersonError().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ValidationReportType.PersonError }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the personError property.
      */
     public List<ValidationReportType.PersonError> getPersonError() {
         if (personError == null) {
-            personError = new ArrayList<ValidationReportType.PersonError>();
+            personError = new ArrayList<>();
         }
         return this.personError;
     }
@@ -156,30 +189,36 @@ public class ValidationReportType {
     }
 
     /**
+     * Zuteilung eines Gebäudeidentifikators (EGID) zu einer Person, deren
+     *             Daten in dem angelieferten XML Dokument gefunden wurden.
+     * 
      * Gets the value of the egidAttribution property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the egidAttribution property.
+     * This is why there is not a <CODE>set</CODE> method for the egidAttribution property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getEgidAttribution().add(newItem);
+     * getEgidAttribution().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ValidationReportType.EgidAttribution }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the egidAttribution property.
      */
     public List<ValidationReportType.EgidAttribution> getEgidAttribution() {
         if (egidAttribution == null) {
-            egidAttribution = new ArrayList<ValidationReportType.EgidAttribution>();
+            egidAttribution = new ArrayList<>();
         }
         return this.egidAttribution;
     }
@@ -193,7 +232,7 @@ public class ValidationReportType {
     }
 
     /**
-     * Gets the value of the version property.
+     * Versionsnummer des XML Schemas, welches dieses Element beschreibt.
      * 
      * @return
      *     possible object is
@@ -211,6 +250,7 @@ public class ValidationReportType {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getVersion()
      */
     public void setVersion(String value) {
         this.version = value;
@@ -240,22 +280,22 @@ public class ValidationReportType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;sequence&gt;
-     *         &lt;element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/&gt;
-     *         &lt;element name="EGID" type="{http://www.ech.ch/xmlns/eCH-0011/3}EGIDType"/&gt;
-     *       &lt;/sequence&gt;
-     *     &lt;/restriction&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <complexContent>
+     *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       <sequence>
+     *         <element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/>
+     *         <element name="EGID" type="{http://www.ech.ch/xmlns/eCH-0011/3}EGIDType"/>
+     *       </sequence>
+     *     </restriction>
+     *   </complexContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */
@@ -266,14 +306,22 @@ public class ValidationReportType {
     })
     public static class EgidAttribution {
 
+        /**
+         * Identifikation der Person, auf welche sich diese Zuteilung bezieht.
+         * 
+         */
         @XmlElement(required = true)
         protected PersonIdentificationType personIdentification;
+        /**
+         * Gebäudeidentifikator, der vom BFS zugeteilt wurde.
+         * 
+         */
         @XmlElement(name = "EGID")
         @XmlSchemaType(name = "unsignedInt")
         protected long egid;
 
         /**
-         * Gets the value of the personIdentification property.
+         * Identifikation der Person, auf welche sich diese Zuteilung bezieht.
          * 
          * @return
          *     possible object is
@@ -291,6 +339,7 @@ public class ValidationReportType {
          *     allowed object is
          *     {@link PersonIdentificationType }
          *     
+         * @see #getPersonIdentification()
          */
         public void setPersonIdentification(PersonIdentificationType value) {
             this.personIdentification = value;
@@ -301,7 +350,7 @@ public class ValidationReportType {
         }
 
         /**
-         * Gets the value of the egid property.
+         * Gebäudeidentifikator, der vom BFS zugeteilt wurde.
          * 
          */
         public long getEGID() {
@@ -331,22 +380,22 @@ public class ValidationReportType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;sequence&gt;
-     *         &lt;element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/&gt;
-     *         &lt;element name="errorInfo" type="{http://www.ech.ch/xmlns/eCH-0099/1}errorInfoType" maxOccurs="unbounded"/&gt;
-     *       &lt;/sequence&gt;
-     *     &lt;/restriction&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <complexContent>
+     *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       <sequence>
+     *         <element name="personIdentification" type="{http://www.ech.ch/xmlns/eCH-0044/1}personIdentificationType"/>
+     *         <element name="errorInfo" type="{http://www.ech.ch/xmlns/eCH-0099/1}errorInfoType" maxOccurs="unbounded"/>
+     *       </sequence>
+     *     </restriction>
+     *   </complexContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */
@@ -357,13 +406,21 @@ public class ValidationReportType {
     })
     public static class PersonError {
 
+        /**
+         * Identifikation der Person, auf welche sich der Fehler bezieht.
+         * 
+         */
         @XmlElement(required = true)
         protected PersonIdentificationType personIdentification;
+        /**
+         * Informationen über den Fehler, der für diese Person gefunden wurde.
+         * 
+         */
         @XmlElement(required = true)
         protected List<ErrorInfoType> errorInfo;
 
         /**
-         * Gets the value of the personIdentification property.
+         * Identifikation der Person, auf welche sich der Fehler bezieht.
          * 
          * @return
          *     possible object is
@@ -381,6 +438,7 @@ public class ValidationReportType {
          *     allowed object is
          *     {@link PersonIdentificationType }
          *     
+         * @see #getPersonIdentification()
          */
         public void setPersonIdentification(PersonIdentificationType value) {
             this.personIdentification = value;
@@ -391,30 +449,35 @@ public class ValidationReportType {
         }
 
         /**
+         * Informationen über den Fehler, der für diese Person gefunden wurde.
+         * 
          * Gets the value of the errorInfo property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
+         * <p>This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the errorInfo property.
+         * This is why there is not a <CODE>set</CODE> method for the errorInfo property.</p>
          * 
          * <p>
          * For example, to add a new item, do as follows:
+         * </p>
          * <pre>
-         *    getErrorInfo().add(newItem);
+         * getErrorInfo().add(newItem);
          * </pre>
          * 
          * 
          * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link ErrorInfoType }
+         * </p>
          * 
          * 
+         * @return
+         *     The value of the errorInfo property.
          */
         public List<ErrorInfoType> getErrorInfo() {
             if (errorInfo == null) {
-                errorInfo = new ArrayList<ErrorInfoType>();
+                errorInfo = new ArrayList<>();
             }
             return this.errorInfo;
         }
